@@ -1,29 +1,92 @@
+@font-face {
+	font-family: 'Sintony';
+	src: url('Sintony.eot');
+	src: url('Sintony.eot?#iefix') format('embedded-opentype'),
+		url('Sintony.woff2') format('woff2'),
+		url('Sintony.woff') format('woff'),
+		url('Sintony.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sintony';
+	src: url('Sintony-Bold.eot');
+	src: url('Sintony-Bold.eot?#iefix') format('embedded-opentype'),
+		url('Sintony-Bold.woff2') format('woff2'),
+		url('Sintony-Bold.woff') format('woff'),
+		url('Sintony-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('PlayfairDisplay-Bold.eot');
+	src: url('PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+		url('PlayfairDisplay-Bold.woff2') format('woff2'),
+		url('PlayfairDisplay-Bold.woff') format('woff'),
+		url('PlayfairDisplay-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('PlayfairDisplay-Black.eot');
+	src: url('PlayfairDisplay-Black.eot?#iefix') format('embedded-opentype'),
+		url('PlayfairDisplay-Black.woff2') format('woff2'),
+		url('PlayfairDisplay-Black.woff') format('woff'),
+		url('PlayfairDisplay-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('PlayfairDisplay-Regular.eot');
+	src: url('PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+		url('PlayfairDisplay-Regular.woff2') format('woff2'),
+		url('PlayfairDisplay-Regular.woff') format('woff'),
+		url('PlayfairDisplay-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
 .container {
-    width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    &_relative {
-        position: relative;
-    }
-    &_flex {
-        display: flex;
-    }
-    @include laptops {
-        min-width: 800px;
-        width: auto;
-        margin: 0 auto;
-        padding: 0px 30px;
-    }
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+	@include laptops {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0px 30px;
+	}
 
-    @include tablets {
-        min-width: 440px;
-        margin: 0 auto;
-        padding: 0px 20px;
-    }
+	@include tablets {
+		margin: 0 auto;
+		padding: 0px 20px;
+	}
 
-    @include phones {
-        min-width: 300px;
-        margin: 0 auto;
-        padding: 0px 10px;
-    }
+	@include phones {
+		margin: 0 auto;
+		padding: 0px 10px;
+	}
+}
+
+.main-title {
+	font-size: 56px;
+	font-family: "Playfair Display";
+	color: #fff;
+	font-weight: bold;
+}
+
+.medium-title {
+	font-size: 35px;
+	font-family: "Playfair Display";
+	color: $black;
+	font-weight: bold;
+	&_white {
+		color: #fff;
+	}
 }
