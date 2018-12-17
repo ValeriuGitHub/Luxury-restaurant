@@ -1,0 +1,30 @@
+header#header-wrapper
+	.container
+		.header
+			.header-logo
+				img(src="./img/header/logo.png").header-logo__img
+			nav.header-navigation
+				ul.header__list
+					li.header__item
+						a(href="#home").header__link Home
+					li.header__item
+						a(href="#menu").header__link Menu
+					li.header__item
+						a(href="#reservation").header__link Reservation
+					li.header__item
+						a(href="#recipe").header__link Recipe
+					li.header__item
+						a(href="#blog").header__link Blog
+					li.header__item
+						a(href="#pages").header__link Pages
+					li.header__item
+						a(href="#contact").header__link Contact
+			a(href="#").header-cart
+				.header-cart__img
+					img(src="./img/header/icon_cart.png")
+					.header-cart__counter 3
+				i.fa.fa-caret-down.header-cart__icon
+			button.header-button
+				.header-button__white-border
+					img(src="./img/header/icon_plate.png").header-button__icon
+					| Book your table

@@ -36,7 +36,7 @@ a {
 	transition: 300ms;
 	text-decoration: none;
 	color: $black;
-	&:hover {
+	&:hover, &:focus {
 		color: $orange;
 		border-bottom-color: $orange;
 	}
@@ -54,6 +54,7 @@ li {
 
 button {
 	margin: 0;
+	transition: 300ms;
 	padding: 0;
 	outline: none;
 	border-style: none;
@@ -66,7 +67,7 @@ button {
 	font-family: "Sintony";
 	text-transform: uppercase;
 	font-weight: bold;
-	&:hover {
-		background-color: rgba($orange, 0.5);
+	&:hover, &:focus {
+		background-color: $pink;
 	}
 }
