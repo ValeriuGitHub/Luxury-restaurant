@@ -71,3 +71,6 @@ button {
 		background-color: $pink;
 	}
 }
+
+label[for]{cursor:pointer;}
+input~label{cursor:pointer;}

@@ -1,0 +1,63 @@
+footer.footer-wrapper#footer
+	.container
+		.footer
+			nav.footer-column.footer-navigation
+				h2.footer__title
+					| Navigation
+				ul.footer-navigation__list
+					li.footer-navigation__item
+						a(href="#").footer-navigation__link Home
+					li.footer-navigation__item
+						a(href="#").footer-navigation__link About us
+					li.footer-navigation__item
+						a(href="#").footer-navigation__link Menu
+					li.footer-navigation__item
+						a(href="#").footer-navigation__link Reservation
+					li.footer-navigation__item
+						a(href="#").footer-navigation__link Recipe
+					li.footer-navigation__item
+						a(href="#").footer-navigation__link Blog
+					li.footer-navigation__item
+						a(href="#").footer-navigation__link Contact Us
+			.footer-column.footer-letter
+				h2.footer__title
+					| News letter
+				.footer-letter__text
+					| Enter your email address and subscribe daily newsletter
+				form(method="POST" action="https://peaceful-island-78575.herokuapp.com/api").footer-form
+					label
+						input.footer-form__input(type="email" name="email" required)
+						i.fa.fa-envelope-o.footer-form__icon
+						| Email Address
+					button(type="submit").footer__submit Subscribe
+				ul.footer-letter__list
+					li.footer-letter__item
+						a(href="#").footer-letter__link.footer-letter__facebook
+							i.fa.fa-facebook.footer-letter__icon
+					li.footer-letter__item
+						a(href="#").footer-letter__link.footer-letter__twitter
+							i.fa.fa-twitter.footer-letter__icon
+					li.footer-letter__item
+						a(href="#").footer-letter__link.footer-letter__google-plus
+							i.fa.fa-google-plus.footer-letter__icon
+			.footer-column.footer-app
+				h2.footer__title
+					| Our app available
+				a(href="#").footer-app__rectangle
+					i.fa.fa-apple.footer-app__icon.footer-app__icon-apple
+					.footer-app__text-wrapper
+						.footer-app__text
+							| Available on the
+						h3.footer-app__title
+							| App Store
+				a(href="#").footer-app__rectangle
+					img(src="./img/footer/GooglePlay.png").footer-app__google-play
+					.footer-app__text-wrapper
+						.footer-app__text
+							| Get it on
+						h3.footer-app__title
+							| Google Play
+		.footer-wrapper__bottom
+			| 2016 ©
+			span.footer-wrapper__.footer-columnbottom_white  Luxury Restaurant, 
+			| All rights reserved
