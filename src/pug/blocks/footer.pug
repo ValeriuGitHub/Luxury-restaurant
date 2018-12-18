@@ -2,7 +2,7 @@ footer.footer-wrapper#footer
 	.container
 		.footer
 			nav.footer-column.footer-navigation
-				h2.footer__title
+				h2.footer__title.footer-navigation__title
 					| Navigation
 				ul.footer-navigation__list
 					li.footer-navigation__item
@@ -25,39 +25,38 @@ footer.footer-wrapper#footer
 				.footer-letter__text
 					| Enter your email address and subscribe daily newsletter
 				form(method="POST" action="https://peaceful-island-78575.herokuapp.com/api").footer-form
-					label
-						input.footer-form__input(type="email" name="email" required)
+					.footer-form__input-wrapper
+						input.footer-form__input(type="email" name="email" required placeholder="Email Address")
 						i.fa.fa-envelope-o.footer-form__icon
-						| Email Address
 					button(type="submit").footer__submit Subscribe
 				ul.footer-letter__list
 					li.footer-letter__item
-						a(href="#").footer-letter__link.footer-letter__facebook
+						a(href="https://www.facebook.com/").footer-letter__link.footer-letter__link_facebook
 							i.fa.fa-facebook.footer-letter__icon
 					li.footer-letter__item
-						a(href="#").footer-letter__link.footer-letter__twitter
+						a(href="https://twitter.com/?lang=ru").footer-letter__link.footer-letter__link_twitter
 							i.fa.fa-twitter.footer-letter__icon
 					li.footer-letter__item
-						a(href="#").footer-letter__link.footer-letter__google-plus
+						a(href="https://plus.google.com/discover").footer-letter__link.footer-letter__link_google-plus
 							i.fa.fa-google-plus.footer-letter__icon
 			.footer-column.footer-app
-				h2.footer__title
+				h2.footer__title.footer__title_margin-bottom
 					| Our app available
-				a(href="#").footer-app__rectangle
+				a(href="https://www.apple.com/").footer-app__rectangle
 					i.fa.fa-apple.footer-app__icon.footer-app__icon-apple
 					.footer-app__text-wrapper
 						.footer-app__text
 							| Available on the
 						h3.footer-app__title
 							| App Store
-				a(href="#").footer-app__rectangle
+				a(href="https://play.google.com/store").footer-app__rectangle
 					img(src="./img/footer/GooglePlay.png").footer-app__google-play
-					.footer-app__text-wrapper
+					.footer-app__text-wrapper.footer-app__text-wrapper_closer
 						.footer-app__text
 							| Get it on
 						h3.footer-app__title
 							| Google Play
 		.footer-wrapper__bottom
-			| 2016 ©
-			span.footer-wrapper__.footer-columnbottom_white  Luxury Restaurant, 
+			| 2016 © 
+			span.footer-wrapper__bottom_white  Luxury Restaurant, 
 			| All rights reserved
