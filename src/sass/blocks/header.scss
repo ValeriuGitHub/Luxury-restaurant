@@ -36,10 +36,41 @@
    			padding: 9px 13px 9px;
 		}
 	}
+    &-dropdown {
+    	display: none;
+        cursor: pointer;
+        &_active {
+        	display: flex;
+            position: absolute;
+			border-radius: 5px;
+            padding: 10px 0px;
+			top: 100%;
+			left: 50%;
+			margin-left: -50px;
+            background-color: orange;
+            border: 1px solid #000;
+            color: #fff;
+        }
+        &__list {
+        	@extend %list;
+        }
+        &__link {
+        	padding: 5px 40px;
+        	display: block;
+        	&:hover {
+        		color: #fff;
+        	}
+        }
+    }
 	&-cart {
 		display: flex;
 	    margin-top: 3px;
 	    margin-right: 30px;
+	    position: relative;
+	    cursor: pointer;
+	    &:hover .header-cart__icon {
+			color: $orange;
+	    }
 		&__img {
 			position: relative;
 			display: block;
@@ -47,6 +78,13 @@
 		&__icon {
 			margin-left: 13px;
 			margin-top: 3px;
+			transition: 0.7s;
+			&_active {
+		        transform: rotate(90deg);
+                transition: 0.7s;
+       			margin-left: 13px;
+				margin-top: 3px;
+            }
 		}
 		&__counter {
 			position: absolute;

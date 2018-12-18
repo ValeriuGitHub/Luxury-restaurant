@@ -19,11 +19,22 @@ header#header-wrapper
 						a(href="#pages").header__link Pages
 					li.header__item
 						a(href="#contact").header__link Contact
-			a(href="#").header-cart
+			.header-cart
 				.header-cart__img
 					img(src="./img/header/icon_cart.png")
 					.header-cart__counter 3
 				i.fa.fa-caret-down.header-cart__icon
+				.header-dropdown
+					ul.header-dropdown__list
+						li.header-dropdown__item
+							a(href="").header-dropdown__link
+								| 1
+						li.header-dropdown__item
+							a(href="").header-dropdown__link
+								| 2
+						li.header-dropdown__item
+							a(href="").header-dropdown__link
+								| 3
 			button.header-button
 				.header-button__white-border
 					img(src="./img/header/icon_plate.png").header-button__icon
