@@ -20,6 +20,11 @@ body {
 	font-size: 14px;
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+}
+
 footer {
 	font-weight: normal;
 }
@@ -36,10 +41,14 @@ a {
 	transition: 300ms;
 	text-decoration: none;
 	color: $black;
-	&:hover {
+	&:hover, &:focus {
 		color: $orange;
 		border-bottom-color: $orange;
 	}
+}
+
+input {
+	transition: 0.7s;
 }
 
 ul {
@@ -54,6 +63,7 @@ li {
 
 button {
 	margin: 0;
+	transition: 300ms;
 	padding: 0;
 	outline: none;
 	border-style: none;
@@ -61,12 +71,31 @@ button {
 	cursor: pointer;
 	border-radius: 4px;
 	background-color: $orange;
+	color: #fff;
+	padding: 15px 35px;
 	font-size: 14px;
 	text-align: center;
 	font-family: "Sintony";
 	text-transform: uppercase;
 	font-weight: bold;
-	&:hover {
-		background-color: rgba($orange, 0.5);
+	&:hover, &:focus {
+		background-color: $pink;
+	}
+	@include tablets {
+		font-size: 13px;
+		padding: 15px 30px;
+	}
+	@include phones {
+		font-size: 12px;
+		padding: 15px 20px;
 	}
 }
+
+label[for]{cursor:pointer;}
+input~label{cursor:pointer;}
+
+input {outline:none;}
+input:focus, input:hover {border: 1px solid $orange}
+input:focus, input:hover {color: #fff}
+input::placeholder { color: $f-gray; font-weight: normal; letter-spacing: 0.3px}
+input {color: $f-gray;}

@@ -1,20 +1,19 @@
-$transition: 300ms;
-
 // colors
 
 $orange: #fea100;
 $black: #14141d;
 $f-gray: #adb2b7;
+$pink: #fe4c8d;
 
 // Basic stylesheets
 
-@import "./tags.scss";
 @import "./misc.scss";
+@import "./tags.scss";
 @import "./style.scss";
 
 // Page parts
 
-// @import "./blocks/header.scss";
-// @import "./blocks/footer.scss";
+@import "./blocks/header.scss";
+@import "./blocks/footer.scss";
 
 // Site pages styles
