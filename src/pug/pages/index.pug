@@ -1,4 +1,6 @@
 extends ../templates/common.pug
+include ../mixins/HomePage/banner.pug
 block variables
-    - var title = "Home page";
+	- var title = "Home page";
 block inner
+	include ../blocks/HomePage/banner.pug

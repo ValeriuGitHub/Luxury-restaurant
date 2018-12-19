@@ -93,4 +93,85 @@
 	&_white {
 		color: #fff;
 	}
+	&_orange {
+		color: $orange;
+	}
+}
+
+.my-dots {
+	position: absolute;
+	bottom: -50px;
+	display: block;
+	width: 0%;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	margin-left: 5px;
+    left: -94px;
+    top: 27.4%;
+}
+
+.my-dots li {
+	position: relative;
+	display: inline-block;
+	width: 25px;
+	height: 18px;
+	padding: 0;
+	display: flex;
+    flex-direction: column;
+	cursor: pointer;
+}
+
+.my-dots li button {
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+	cursor: pointer;
+	color: transparent;
+	border: 0;
+	outline: none;
+	background: transparent;
+}
+
+.my-dots li button:hover,
+.my-dots li button:focus {
+	outline: none;
+}
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before {
+	opacity: 1;
+}
+.slick-dotted.slick-slider {
+	margin-bottom: 0px;
+}
+
+.my-dots li button:before {
+	font-family: 'slick';
+	font-size: 6px;
+	line-height: 20px;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 14px;
+	height: 14px;
+	content: '•';
+	border-radius: 50%;
+	background-color: transparent;
+	border: 2px solid #fff;
+	text-align: center;
+	opacity: 1;
+	color: black;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.my-dots li.slick-active button:before {
+	opacity: 1;
+	background-color: transparent;
+	color: black;
+	border-color: $orange;
 }

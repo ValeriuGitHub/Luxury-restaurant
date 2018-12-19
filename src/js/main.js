@@ -23,3 +23,11 @@ jQuery(function($){
 		}
 	});
 });
+
+// HomePage - Banner
+
+$('.banner__list').slick({
+	arrows : false,
+	dots: true,
+	dotsClass: "my-dots",
+});
