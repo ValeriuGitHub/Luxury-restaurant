@@ -20,6 +20,11 @@ body {
 	font-size: 14px;
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+}
+
 footer {
 	font-weight: normal;
 }
@@ -40,6 +45,10 @@ a {
 		color: $orange;
 		border-bottom-color: $orange;
 	}
+}
+
+input {
+	transition: 0.7s;
 }
 
 ul {

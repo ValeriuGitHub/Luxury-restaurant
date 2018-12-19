@@ -1,6 +1,7 @@
 .footer {
 	display: flex;
 	padding-bottom: 67px;
+	flex-shrink: 0;
 	@include laptops {
 		padding-bottom: 45px;
 	}
