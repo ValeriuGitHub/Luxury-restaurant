@@ -11,11 +11,12 @@ $pink: #fe4c8d;
 @import "./tags.scss";
 @import "./style.scss";
 
-// Page parts
+// Common block
 
 @import "./blocks/header.scss";
 @import "./blocks/footer.scss";
 
-// Site pages styles
+// Home Page
 
 @import "./blocks/HomePage/banner.scss";
+@import "./blocks/HomePage/about.scss";

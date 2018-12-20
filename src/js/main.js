@@ -31,3 +31,11 @@ $('.banner__list').slick({
 	dots: true,
 	dotsClass: "my-dots",
 });
+
+// HomePage - About
+
+$("#about-button").on('click', function(){
+	$("#about-left__text").toggle("slow", function() {
+
+	});
+});
