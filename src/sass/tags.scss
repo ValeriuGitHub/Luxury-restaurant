@@ -72,12 +72,15 @@ button {
 	border-radius: 4px;
 	background-color: $orange;
 	color: #fff;
-	padding: 15px 32px;
 	font-size: 14px;
 	text-align: center;
 	font-family: "Sintony";
 	text-transform: uppercase;
 	font-weight: bold;
+	padding: 17px 34px;
+	font-family: Sintony;
+	font-weight: 700;
+	letter-spacing: 0.6px;
 	&:hover, &:focus {
 		background-color: $pink;
 	}
