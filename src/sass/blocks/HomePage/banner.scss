@@ -1,5 +1,3 @@
-$banner-b: #dde3e7;
-
 .banner {
 	&__list {
 		@extend %list;
@@ -40,7 +38,7 @@ $banner-b: #dde3e7;
 	&-under {
 		background-color: #edf1f3;
 		border-bottom: 1px solid $banner-b;
-		padding: 29px 0 20px;
+    	padding: 23px 0 21px;
 		&__wrapper {
 			display: flex;
 		}
@@ -140,11 +138,6 @@ $banner-b: #dde3e7;
 			margin-right: 21px;
 		}
 		&__phone {
-			font-size: 34.5px;
-			letter-spacing: 1px;
-			font-family: "PlayfairDisplay";
-			color: $black;
-			text-transform: uppercase;
 			border-left: 1px solid $banner-b;
 			margin-left: 3px;
 			position: relative;
@@ -152,4 +145,82 @@ $banner-b: #dde3e7;
 			letter-spacing: 1.6px;
 		}
 	}
+}
+
+.HomePage-banner-dots {
+	position: absolute;
+	bottom: -50px;
+	display: block;
+	width: 0%;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	margin-left: 5px;
+	left: -94px;
+	top: 27.4%;
+}
+
+.HomePage-banner-dots li {
+	position: relative;
+	display: inline-block;
+	width: 25px;
+	height: 18px;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.HomePage-banner-dots li button {
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+	cursor: pointer;
+	color: transparent;
+	border: 0;
+	outline: none;
+	background: transparent;
+}
+
+.HomePage-banner-dots li button:hover,
+.HomePage-banner-dots li button:focus {
+	outline: none;
+}
+
+.HomePage-banner-dots li button:hover:before,
+.HomePage-banner-dots li button:focus:before {
+	opacity: 1;
+}
+.slick-dotted.slick-slider {
+	margin-bottom: 0px;
+}
+
+.HomePage-banner-dots li button:before {
+	font-family: 'slick';
+	font-size: 6px;
+	line-height: 20px;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 14px;
+	height: 14px;
+	content: '•';
+	border-radius: 50%;
+	background-color: transparent;
+	border: 2px solid #fff;
+	text-align: center;
+	opacity: 1;
+	color: black;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.HomePage-banner-dots li.slick-active button:before {
+	opacity: 1;
+	background-color: transparent;
+	color: black;
+	border-color: $orange;
 }

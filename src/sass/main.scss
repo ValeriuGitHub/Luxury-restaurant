@@ -4,6 +4,7 @@ $orange: #fea100;
 $black: #14141d;
 $f-gray: #adb2b7;
 $pink: #fe4c8d;
+$banner-b: #dde3e7;
 
 // Basic stylesheets
 
@@ -20,3 +21,4 @@ $pink: #fe4c8d;
 
 @import "./blocks/HomePage/banner.scss";
 @import "./blocks/HomePage/about.scss";
+@import "./blocks/HomePage/special.scss";

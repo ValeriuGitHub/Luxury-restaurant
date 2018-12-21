@@ -29,13 +29,21 @@ jQuery(function($){
 $('.banner__list').slick({
 	arrows : false,
 	dots: true,
-	dotsClass: "my-dots",
+	dotsClass: "HomePage-banner-dots",
 });
 
 // HomePage - About
 
 $("#about-button").on('click', function(){
 	$("#about-left__text").toggle("slow", function() {
-
 	});
 });
+
+// HomePabe - Special
+
+$('.special__list').slick({
+	arrows : false,
+	dots: true,
+	dotsClass: "HomePage-special-dots",
+});
+

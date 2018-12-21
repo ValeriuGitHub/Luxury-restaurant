@@ -1,0 +1,26 @@
+mixin special(titleOne, titleTwo, urlOne, urlTwo, textOne, textTwo, PhoneOne, PhoneTwo, PriceOne, PriceTwo)
+	li.special__item
+		.special-left
+			img(src=urlOne).special__img
+			.special__top-info
+				h3.special__title #{titleOne}
+				p.special__text #{textOne}
+			.bottom-info
+				h4.bottom-info__title Home
+					.bottom-info__title_pink Delivery
+				a(href="tel:+380634567890" target="_blank").Home-Page__phone.Home-Page__phone_smaller #{PhoneOne}
+				.special__price
+					span.special__price-sign $
+					| #{PriceOne}
+		.special-right
+			img(src=urlTwo).special__img
+			.special__top-info
+				h3.special__title #{titleTwo}
+				p.special__text #{textTwo}
+			.bottom-info
+				h4.bottom-info__title Home
+					.bottom-info__title_pink Delivery
+				a(href="tel:+380634567890" target="_blank").Home-Page__phone.Home-Page__phone_smaller #{PhoneTwo}
+				.special__price
+					span.special__price-sign $
+					| #{PriceTwo}

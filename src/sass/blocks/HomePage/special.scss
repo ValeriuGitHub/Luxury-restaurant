@@ -1,0 +1,172 @@
+.special {
+	@extend %clearfix;
+	position: relative;
+	padding-top: 100px;
+	padding-bottom: 115px;
+	&-background {
+		background: url("./img/HomePage/special-background.jpg") no-repeat;
+		background-size: contain;
+		height: 440px;
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		width: 100%;
+	}
+	&-left {
+		width: calc(50% - 15px);
+		float: left;
+		margin-right: 15px;
+		box-shadow: 0px 24px 38px 0px rgba(#000, 0.09);
+	}
+	&-right {
+		width: calc(50% - 15px);
+		float: left;
+		margin-left: 15px;
+		box-shadow: 0px 24px 38px 0px rgba(#000, 0.09);
+	}
+	&__main {
+		&-title {
+			text-align: center;
+			margin-bottom: 22px;
+		}
+	}
+	&__top {
+		&-info {
+		    padding: 42px 42px 0px;
+		}
+	}
+	.bottom {
+		&-info {
+    		padding: 12px 46px 22px;
+    		display: flex;
+    		justify-content: space-between;
+    		&__title {
+				color: $black;
+				text-transform: uppercase;
+				line-height: 1.308;
+				margin-right: 12px;
+				&_pink {
+					color: $pink;
+				}
+    		}
+    	}
+	}
+	&__img {
+		height: 420px;
+		display: block;
+	}
+	&__title {
+		font-size: 26px;
+		font-family: "PlayfairDisplay";
+		color: $black;
+		text-align: center;
+		letter-spacing: 1px;
+	}
+	&__text {
+		color: #5c6369;
+		line-height: 1.857;
+		text-align: center;
+		border-bottom: 1px solid #e1e1e1;
+		padding-bottom: 55px;
+		margin: 10px 8px;
+	}
+	&-under {
+		&__img {
+			position: absolute;
+			right: 0;
+		}
+	}
+	&__price {
+		font-size: 32px;
+		letter-spacing: 1.7px;
+		font-family: "PlayfairDisplay";
+		color: $orange;
+		text-transform: uppercase;
+		margin-top: -2px;
+		&-sign {
+			display: inline-block;
+			font-size: 20px;
+			vertical-align: super;
+		}
+	}
+}
+
+.HomePage-special-dots {
+	position: absolute;
+	bottom: -50px;
+	display: block;
+	width: 0%;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	margin-left: 5px;
+    right: 13.3%;
+    top: -19%;
+    display: flex;
+    @extend %list;
+}
+
+.HomePage-special-dots li {
+	position: relative;
+	display: inline-block;
+	width: 25px;
+	height: 18px;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.HomePage-special-dots li button {
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+	cursor: pointer;
+	color: transparent;
+	border: 0;
+	outline: none;
+	background: transparent;
+}
+
+.HomePage-special-dots li button:hover,
+.HomePage-special-dots li button:focus {
+	outline: none;
+}
+
+.HomePage-special-dots li button:hover:before,
+.HomePage-special-dots li button:focus:before {
+	opacity: 1;
+}
+.slick-dotted.slick-slider {
+	margin-bottom: 0px;
+}
+
+.HomePage-special-dots li button:before {
+	font-family: 'slick';
+	font-size: 6px;
+	line-height: 20px;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	width: 14px;
+	height: 14px;
+	content: '•';
+	border-radius: 50%;
+	background-color: transparent;
+	border: 2px solid #fff;
+	text-align: center;
+	opacity: 1;
+	color: black;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.HomePage-special-dots li.slick-active button:before {
+	opacity: 1;
+	background-color: transparent;
+	color: black;
+	border-color: $orange;
+}
