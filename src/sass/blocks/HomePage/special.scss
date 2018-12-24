@@ -1,11 +1,10 @@
 .special {
 	@extend %clearfix;
 	position: relative;
-	padding-top: 89px;
+	padding-top: 85px;
 	padding-bottom: 86px;
 	&-background {
-		background: url("./img/HomePage/special-background.jpg") no-repeat;
-		background-size: contain;
+		background-color: #4c5659;
 		height: 440px;
 		position: absolute;
 		z-index: -1;
@@ -30,6 +29,7 @@
 		&-title {
 			text-align: center;
 			margin-bottom: 22px;
+			color: #fff;
 		}
 	}
 	&__top {
@@ -53,7 +53,7 @@
 		}
 	}
 	&__img {
-		height: 420px;
+		height: 422px;
 		display: block;
 	}
 	&__title {

@@ -3,18 +3,14 @@
 	position: relative;
 	&-wrapper {
 		position: relative;
-		overflow: hidden;
 		&__img {
 			&-wrapper {
-				position: absolute;
-				width: 267px;
-				height: 414px;
 				&:after {
 					content: "";
 					background: url("./img/HomePage/border-dashed.png");
 					background-repeat: repeat-x;
 					display: block;
-					width: 4000px;
+					width: 100%;
 					position: absolute;
 					height: 1px;
 					z-index: -1;
@@ -23,7 +19,7 @@
 			}
 			&-left {
 				position: absolute;
-				top: 3%;
+    			top: 10px;
 				left: 1px;
 				display: block;
 				background-size: contain;
@@ -84,6 +80,9 @@
 			font-family: "PlayfairDisplay";
 			color: $black;
 			transition: 300ms;
+			&_active {
+				color: $pink;
+			}
 		}
 	}
 	&__item {
@@ -96,7 +95,7 @@
 			color: $orange;
 		}
 		&-all {
-			&:hover .menu__all {
+			&:hover .menu__all, &:focus .menu__all {
 				background: url("./img/HomePage/icon-all-pink.png") no-repeat;
 			}
 		}
