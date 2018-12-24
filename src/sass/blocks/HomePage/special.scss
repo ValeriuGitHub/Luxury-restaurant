@@ -1,8 +1,8 @@
 .special {
 	@extend %clearfix;
 	position: relative;
-	padding-top: 100px;
-	padding-bottom: 115px;
+	padding-top: 89px;
+	padding-bottom: 86px;
 	&-background {
 		background: url("./img/HomePage/special-background.jpg") no-repeat;
 		background-size: contain;
@@ -17,12 +17,14 @@
 		float: left;
 		margin-right: 15px;
 		box-shadow: 0px 24px 38px 0px rgba(#000, 0.09);
+		background-color: #fff;
 	}
 	&-right {
 		width: calc(50% - 15px);
 		float: left;
 		margin-left: 15px;
 		box-shadow: 0px 24px 38px 0px rgba(#000, 0.09);
+		background-color: #fff;
 	}
 	&__main {
 		&-title {
@@ -32,24 +34,23 @@
 	}
 	&__top {
 		&-info {
-		    padding: 42px 42px 0px;
+			padding: 42px 42px 0px;
 		}
 	}
 	.bottom {
 		&-info {
-    		padding: 12px 46px 22px;
-    		display: flex;
-    		justify-content: space-between;
-    		&__title {
+			padding: 12px 46px 22px;
+			display: flex;
+			justify-content: space-between;
+			&__title {
 				color: $black;
 				text-transform: uppercase;
 				line-height: 1.308;
-				margin-right: 12px;
 				&_pink {
 					color: $pink;
 				}
-    		}
-    	}
+			}
+		}
 	}
 	&__img {
 		height: 420px;
@@ -73,7 +74,11 @@
 	&-under {
 		&__img {
 			position: absolute;
-			right: 0;
+			position: absolute;
+			right: 12.6%;
+			display: block;
+			bottom: -38px;
+			z-index: -1;
 		}
 	}
 	&__price {
@@ -100,10 +105,10 @@
 	list-style: none;
 	text-align: center;
 	margin-left: 5px;
-    right: 13.3%;
-    top: -19%;
-    display: flex;
-    @extend %list;
+	right: 13.3%;
+	top: -19%;
+	display: flex;
+	@extend %list;
 }
 
 .HomePage-special-dots li {

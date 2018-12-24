@@ -1,0 +1,186 @@
+.menu {
+	padding: 0px 0px 100px;
+	position: relative;
+	&-wrapper {
+		position: relative;
+		overflow: hidden;
+		&__img {
+			&-wrapper {
+				position: absolute;
+				width: 267px;
+				height: 414px;
+				&:after {
+					content: "";
+					background: url("./img/HomePage/border-dashed.png");
+					background-repeat: repeat-x;
+					display: block;
+					width: 4000px;
+					position: absolute;
+					height: 1px;
+					z-index: -1;
+					margin-top: 151px;
+				}
+			}
+			&-left {
+				position: absolute;
+				top: 3%;
+				left: 1px;
+				display: block;
+				background-size: contain;
+				width: 267px;
+				height: 414px;
+			}
+		}
+	}
+	&__img {
+		&-right {
+			position: absolute;
+			bottom: -79px;
+			right: 31px;
+			height: 241px;
+			width: 241px;
+			background-size: contain;
+			z-index: 10;
+		}
+	}
+	&__title {
+		text-align: center;
+		margin-bottom: 28px;
+	}
+	&__list {
+		@extend %list;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 40px;
+	}
+	&__all {
+		background: url("./img/HomePage/icon-all-orange.png") no-repeat;
+	}
+	&__lunch {
+		background: url("./img/HomePage/icon-lunch-orange.png") no-repeat;
+	}
+	&__breakfast {
+		background: url("./img/HomePage/icon-breakfast-orange.png") no-repeat;
+	}
+	&__snacks {
+		background: url("./img/HomePage/icon-snacks-orange.png") no-repeat;
+	}
+	&__pizza {
+		background: url("./img/HomePage/icon-pizza-orange.png") no-repeat;
+	}
+	&__soups {
+		background: url("./img/HomePage/icon-soups-orange.png") no-repeat;
+	}
+	&__dinner {
+		background: url("./img/HomePage/icon-dinner-orange.png") no-repeat;
+	}
+	&__link {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		&-text {
+			font-size: 20px;
+			font-family: "PlayfairDisplay";
+			color: $black;
+			transition: 300ms;
+		}
+	}
+	&__item {
+		justify-content: center;
+		margin-right: 53.5px;
+		&:last-child {
+			margin-right: 0px;
+		}
+		&:hover .menu__link-text {
+			color: $orange;
+		}
+		&-all {
+			&:hover .menu__all {
+				background: url("./img/HomePage/icon-all-pink.png") no-repeat;
+			}
+		}
+		&-lunch {
+			&:hover .menu__lunch {
+				background: url("./img/HomePage/icon-lunch-pink.png") no-repeat;
+			}
+		}
+		&-breakfast {
+			&:hover .menu__breakfast {
+				background: url("./img/HomePage/icon-breakfast-pink.png") no-repeat;
+			}
+		}
+		&-snacks {
+			&:hover .menu__snacks {
+				background: url("./img/HomePage/icon-snacks-pink.png") no-repeat;
+			}
+		}
+		&-pizza {
+			&:hover .menu__pizza {
+				background: url("./img/HomePage/icon-pizza-pink.png") no-repeat;
+			}
+		}
+		&-soups {
+			&:hover .menu__soups {
+				background: url("./img/HomePage/icon-soups-pink.png") no-repeat;
+			}
+		}
+		&-dinner {
+			&:hover .menu__dinner {
+				background: url("./img/HomePage/icon-dinner-pink.png") no-repeat;
+			}
+		}
+	}
+	&__icon {
+		width: 25px;
+		height: 28px;
+		transition: 300ms;
+	}
+	&__button {
+		margin: 0 auto;
+	}
+	&-items {
+		&__item {
+			display: flex;
+			width: calc(50% - 30px);
+			float: left;
+			border-bottom: 1px solid #eee;
+			align-items: center;
+			justify-content: space-between;
+			padding: 30px 27px 12px 0;
+			margin-right: 42px;
+			&:nth-child(2n) {
+				margin-right: 0px;
+			}
+		}
+		&__title {
+			font-size: 16px;
+			color: $black;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		&__text {
+			color: #5c6369;
+			font-weight: 300;
+			letter-spacing: -0.2px;
+		}
+		&__price {
+			font-size: 26px;
+			letter-spacing: 1.7px;
+			font-family: "PlayfairDisplay";
+			color: $orange;
+			text-transform: uppercase;
+			margin-top: -13px;
+			&-sign {
+				display: inline-block;
+				font-size: 20px;
+				vertical-align: super;
+			}
+		}
+		&__list {
+			@extend %list;
+			@extend %clearfix;
+			margin-bottom: 35px;
+		}
+	}
+}

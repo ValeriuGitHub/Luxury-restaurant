@@ -1,0 +1,8 @@
+mixin menu(title, text, price)
+	li.menu-items__item
+		.menu-items__text-wrapper
+			h3.menu-items__title #{title}
+			.menu-items__text #{text}
+		.menu-items__price
+			span.menu-items__price-sign $
+			| #{price}
