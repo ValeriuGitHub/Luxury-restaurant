@@ -1,0 +1,88 @@
+.clients {
+	padding-top: 90px;
+	padding-bottom: 97px;
+	position: relative;
+	&-wrapper {
+		background: url("./img/HomePage/clients-background.jpg") repeat;
+	}
+	&__title {
+		text-align: center;
+		margin-bottom: 16px;
+		&-user {
+			font-size: 16px;
+			color: #fffaf1;
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 5px;
+		}
+	}
+	&__star {
+		margin: 0 auto;
+	}
+	&__slider {
+		display: flex;
+		justify-content: center;
+	}
+	&__list {
+		display: flex;
+		justify-content: center;
+	}
+	&__item {
+		display: flex;
+		justify-content: center;
+		position: relative;
+	}
+	&__text {
+		font-size: 15px;
+		color: #fff;
+		line-height: 1.733;
+		text-align: center;
+		width: 754px;
+		margin: 0 auto;
+		margin-bottom: 21px;
+	}
+	&__quote {
+		position: absolute;
+		&-left {
+			left: 12.3%;
+			margin-top: -5px;
+		}
+		&-right {
+			right: 12.6%;
+			top: 31%;
+		}
+	}
+	&__arrow {
+		position: absolute;
+		top: 35%;
+		width: 30px;
+		height: 30px;
+		border: 2px solid #ffece9;
+		border-top-color: transparent;
+		border-left-color: transparent;
+		margin: auto;
+		z-index: 12;
+		&-right {
+			right: 11px;
+			transform: rotate(315deg);
+			&:hover, &:focus {
+				border-bottom-color: $orange;
+				border-right-color: $orange;
+			}
+		}
+		&-left {
+			left: 3px;
+			transform: rotate(135deg);
+			&:hover, &:focus {
+				border-bottom-color: $orange;
+				border-right-color: $orange;
+			}
+		}
+	}
+	&__avatar {
+		&-wrapper {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

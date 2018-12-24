@@ -70,3 +70,10 @@ $(".menu__item").on('click', function(e){
 	$(".menu-items__list").filter('[data-tab='+dataTab+']').fadeIn(500);
 });
 
+// HomePage - Clients
+
+$('.clients__list').slick({
+	prevArrow: $('#clients__prev'),
+	nextArrow: $('#clients__next'),
+});
+
