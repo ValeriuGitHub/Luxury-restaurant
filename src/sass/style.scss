@@ -66,12 +66,10 @@
 		margin: 0 auto;
 		padding: 0px 30px;
 	}
-
 	@include tablets {
 		margin: 0 auto;
 		padding: 0px 20px;
 	}
-
 	@include phones {
 		margin: 0 auto;
 		padding: 0px 10px;
@@ -90,13 +88,40 @@
 		position: relative;
 		padding-left: 19px;
 		letter-spacing: 1.6px;
+		@include laptops {
+			font-size: 28px;
+		}
+		@include tablets {
+			font-size: 24px;
+		}
+		@include phones {
+			font-size: 20px;
+		}
 		&_smaller {
 			font-size: 28px;
 			letter-spacing: 1.4px;
+			@include laptops {
+				font-size: 24px;
+			}
+			@include tablets {
+				font-size: 21px;
+			}
+			@include phones {
+				font-size: 18px;
+			}
 		}
 		&_smallest {
 			font-size: 24px;
     		letter-spacing: 2.5px;
+    		@include laptops {
+				font-size: 22px;
+			}
+			@include tablets {
+				font-size: 19px;
+			}
+			@include phones {
+				font-size: 17.5px;
+			}
 		}
 	}
 }
@@ -106,10 +131,28 @@
 		padding: 12px 46px 22px;
 		display: flex;
 		justify-content: space-between;
+		@include laptops {
+			padding:  15px 10px 15px;
+		}
+		@include tablets {
+			padding: 15px 50px;
+		}
+		@include phones {
+		    padding: 15px 5px;
+		}
 		&__title {
 			color: $black;
 			text-transform: uppercase;
 			line-height: 1.308;
+			@include laptops {
+				font-size: 13px;
+			}
+			@include tablets {
+				font-size: 12px;
+			}
+			@include phones {
+				font-size: 11.5px;
+			}
 			&_pink {
 				color: $pink;
 			}

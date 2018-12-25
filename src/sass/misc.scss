@@ -12,6 +12,12 @@
 	margin: 0;
 }
 
+@mixin desktops() {
+	@media screen and (max-width: 1710px) {
+		@content;
+	}
+}
+
 @mixin laptops() {
 	@media screen and (max-width: 1200px) {
 		@content;

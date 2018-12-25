@@ -84,6 +84,10 @@ button {
 	&:hover, &:focus {
 		background-color: $pink;
 	}
+	@include laptops {
+		font-size: 13.5px;
+		padding: 16px 32px;
+	}
 	@include tablets {
 		font-size: 13px;
 		padding: 15px 30px;

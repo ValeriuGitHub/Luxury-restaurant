@@ -104,6 +104,9 @@
 	}
 	&-navigation {
 		width: 29.7%;
+		@include laptops {
+			width: 22.7%;
+		}
 		@include tablets {
 			width: 100%;
 		}
@@ -283,6 +286,7 @@
 			}
 			@include laptops {
 				padding: 16.5px 0px 14.5px 44px;
+				width: 240px;
 			}
 			@include phones {
 				display: block;

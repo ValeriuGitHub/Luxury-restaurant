@@ -2,6 +2,14 @@
 	padding-top: 90px;
 	padding-bottom: 97px;
 	position: relative;
+	@include tablets {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+	@include phones {
+		padding-bottom: 50px;
+		padding-top: 50px;
+	}
 	&-wrapper {
 		background: url("./img/HomePage/clients-background.jpg") repeat;
 	}
@@ -37,19 +45,32 @@
 		color: #fff;
 		line-height: 1.733;
 		text-align: center;
-		width: 754px;
+		width: 66%;
 		margin: 0 auto;
 		margin-bottom: 21px;
+		@include tablets {
+			width: 80%;
+		}
 	}
 	&__quote {
 		position: absolute;
 		&-left {
 			left: 12.3%;
 			margin-top: -5px;
+			@include tablets {
+				left: 5%;
+			}
 		}
 		&-right {
 			right: 12.6%;
 			top: 31%;
+			@include tablets {
+				right: 6.5%;
+				top: 50%;
+			}
+			@include phones {
+				top: 60%;
+			}
 		}
 	}
 	&__arrow {
@@ -68,6 +89,9 @@
 			&:hover, &:focus {
 				border-bottom-color: $orange;
 				border-right-color: $orange;
+			}
+			@include phones {
+				right: 5px;
 			}
 		}
 		&-left {

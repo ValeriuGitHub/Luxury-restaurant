@@ -1,6 +1,14 @@
 .reserve {
 	padding-top: 87.5px;
 	padding-bottom: 95px;
+	@include tablets {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+	@include phones {
+		padding-top: 50px;
+		padding-bottom: 40px;
+	}
 	@extend %clearfix;
 	&-wrapper {
 		background-color: #edf1f3;
@@ -13,15 +21,37 @@
 		width: 50%;
 		float: left;
 		margin-right: 14px;
+		@include laptops {
+			width: 100%;
+			float: none;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+		&__img {
+			@include tablets {
+				width: 100%;
+				height: 200px;
+			}
+		}
 	}
 	&-right {
 		width: calc(50% - 14px);
 		float: left;
+		@include laptops {
+			width: 100%;
+			float: none;
+			display: flex;
+			justify-content: center;
+		}
 	}
 	&-form {
 		display: flex;
 		flex-wrap: wrap;
 		padding: 21px 0px 0px;
+		@include laptops {
+			justify-content: center;
+		}
 		&__input {
 			width: 270px;
 			padding-bottom: 11px;
@@ -38,6 +68,9 @@
 			&-wrapper {
 				position: relative;
 				margin-right: 30px;
+				@include tablets {
+					margin-right: 0px;
+				}
 				&:nth-child(2n) {
 					margin-right: 0px;
 				}
@@ -50,6 +83,10 @@
 		}
 		&__submit {
 			padding: 17px 28px;
+			@include tablets {
+				margin: 0 auto;
+				margin-bottom: 30px;
+			}
 		}
 	}
 	&-info {
@@ -57,21 +94,39 @@
 		margin-top: 24px;
 		align-items: center;
 		justify-content: space-between;
+		@include tablets {
+			display: block;
+		}
 		&__title {
 			font-size: 13px;
 			margin-left: 42px;
+			@include tablets {
+				margin-left: 0px;
+				display: inline-block;
+			}
 		}
 		&__phone {
-		    letter-spacing: 1.5px;
-		    margin-left: 12px;
-		    font-size: 26px;
+			letter-spacing: 1.5px;
+			margin-left: 12px;
+			font-size: 26px;
+			@include laptops {
+				font-size: 20px;
+			}
+			@include tablets {
+				display: inline-block;
+				margin-top: -3px;
+				font-size: 22px;
+			}
+			@include phones {
+				font-size: 19px;
+			}
 		}
 	}
 }
 
 .reserve-form__input::placeholder {
 	color: #363d43;
-    font-weight: normal;
-	letter-spacing: 0.3px
+	font-weight: normal;
+	letter-spacing: 0.3px;
 }
 
