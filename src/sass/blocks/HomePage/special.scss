@@ -37,21 +37,6 @@
 			padding: 42px 42px 0px;
 		}
 	}
-	.bottom {
-		&-info {
-			padding: 12px 46px 22px;
-			display: flex;
-			justify-content: space-between;
-			&__title {
-				color: $black;
-				text-transform: uppercase;
-				line-height: 1.308;
-				&_pink {
-					color: $pink;
-				}
-			}
-		}
-	}
 	&__img {
 		height: 422px;
 		display: block;

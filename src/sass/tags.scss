@@ -96,9 +96,5 @@ button {
 
 label[for]{cursor:pointer;}
 input~label{cursor:pointer;}
-
 input {outline:none;}
-input:focus, input:hover {border: 1px solid $orange}
-input:focus, input:hover {color: #fff}
-input::placeholder { color: $f-gray; font-weight: normal; letter-spacing: 0.3px}
 input {color: $f-gray;}

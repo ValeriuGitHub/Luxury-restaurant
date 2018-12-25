@@ -7,6 +7,12 @@ $("a[href^='#']").on('click', function (event) {
 	$('body,html').animate({scrollTop: top}, 1500);
 })
 
+// mask
+
+jQuery(function($) {
+	$("input[name=phone]").mask("+38(099) 99-99-999");
+});
+
 // Header DropDown
 
 $(".header-cart").click(function(){

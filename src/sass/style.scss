@@ -94,6 +94,26 @@
 			font-size: 28px;
 			letter-spacing: 1.4px;
 		}
+		&_smallest {
+			font-size: 24px;
+    		letter-spacing: 2.5px;
+		}
+	}
+}
+
+.bottom {
+	&-info {
+		padding: 12px 46px 22px;
+		display: flex;
+		justify-content: space-between;
+		&__title {
+			color: $black;
+			text-transform: uppercase;
+			line-height: 1.308;
+			&_pink {
+				color: $pink;
+			}
+		}
 	}
 }
 
