@@ -186,6 +186,18 @@
 				-webkit-font-smoothing: antialiased;
 				-moz-osx-font-smoothing: grayscale;
 			}
+			&:after {
+				content: "";
+				width: 4px;
+				height: 4px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				border-radius: 50%;
+				margin-left: -2px;
+				margin-top: -2px;
+				background-color: transparent;
+			}
 		}
 		&.slick-active {
 			& button {
@@ -194,6 +206,9 @@
 					background-color: transparent;
 					color: black;
 					border-color: $orange;
+				}
+				&:after {
+					background-color: $orange;
 				}
 			}
 		}
