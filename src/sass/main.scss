@@ -4,6 +4,7 @@ $orange: #fea100;
 $black: #14141d;
 $f-gray: #adb2b7;
 $pink: #fe4c8d;
+$banner-b: #dde3e7;
 
 // Basic stylesheets
 
@@ -11,9 +12,12 @@ $pink: #fe4c8d;
 @import "./tags.scss";
 @import "./style.scss";
 
-// Page parts
+// Common block
 
 @import "./blocks/header.scss";
 @import "./blocks/footer.scss";
 
-// Site pages styles
+// Styles for page
+
+@import "./pages/index.scss";
+

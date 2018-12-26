@@ -21,7 +21,7 @@
 }
 
 @font-face {
-	font-family: 'fonts/Playfair Display';
+	font-family: 'Playfair Display';
 	src: url('fonts/PlayfairDisplay-Bold.eot');
 	src: url('fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
 		url('fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
@@ -32,7 +32,7 @@
 }
 
 @font-face {
-	font-family: 'fonts/Playfair Display';
+	font-family: 'Playfair Display';
 	src: url('fonts/PlayfairDisplay-Black.eot');
 	src: url('fonts/PlayfairDisplay-Black.eot?#iefix') format('embedded-opentype'),
 		url('fonts/PlayfairDisplay-Black.woff2') format('woff2'),
@@ -43,7 +43,7 @@
 }
 
 @font-face {
-	font-family: 'fonts/Playfair Display';
+	font-family: 'Playfair Display';
 	src: url('fonts/PlayfairDisplay-Regular.eot');
 	src: url('fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
 		url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
@@ -66,16 +66,18 @@
 		margin: 0 auto;
 		padding: 0px 30px;
 	}
-
 	@include tablets {
 		margin: 0 auto;
 		padding: 0px 20px;
 	}
-
 	@include phones {
 		margin: 0 auto;
 		padding: 0px 10px;
 	}
+}
+
+.slick-dotted.slick-slider {
+	margin-bottom: 0px;
 }
 
 .main-title {
@@ -83,6 +85,15 @@
 	font-family: "Playfair Display";
 	color: #fff;
 	font-weight: bold;
+	@include laptops {
+		font-size: 48px;
+	}
+	@include tablets {
+		font-size: 36px;
+	}
+	@include phones {
+		font-size: 28px;
+	}
 }
 
 .medium-title {
@@ -92,5 +103,17 @@
 	font-weight: bold;
 	&_white {
 		color: #fff;
+	}
+	&_orange {
+		color: $orange;
+	}
+	@include laptops {
+		font-size: 30px;
+	}
+	@include tablets {
+		font-size: 25px;
+	}
+	@include phones {
+		font-size: 20px;
 	}
 }

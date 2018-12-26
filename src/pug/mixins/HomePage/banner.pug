@@ -1,0 +1,7 @@
+mixin banner(title, imgCount)
+	li(class="banner__item")
+		img(src=`./img/HomePage/banner-${imgCount}-slide.jpg`).banner__img
+		.container
+			h1.main-title.banner__main-title #{title}
+				.medium-title.medium-title_white.banner__under-title from
+					span.medium-title_orange.banner__under-title_left luxury restaurent.

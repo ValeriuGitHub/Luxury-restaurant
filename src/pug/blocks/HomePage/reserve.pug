@@ -1,0 +1,31 @@
+.reserve-wrapper
+	.container
+		.reserve
+			h2.medium-title.reserve__title Reserve your table
+			.reserve-left
+				img(src="./img/HomePage/reserve.jpg").reserve-left__img
+			.reserve-right
+				form(method="POST" action="https://peaceful-island-78575.herokuapp.com/api").reserve-form
+					.reserve-form__input-wrapper
+						input.reserve-form__input(type="name" name="name" required placeholder="Name")
+						img(src="./img/HomePage/icon-name.png").reserve-form__icon
+					.reserve-form__input-wrapper
+						input.reserve-form__input(type="date" name="date" required placeholder="Date")
+						img(src="./img/HomePage/icon-calander.png").reserve-form__icon
+					.reserve-form__input-wrapper
+						input.reserve-form__input(type="time" name="time" required placeholder="Time")
+						img(src="./img/HomePage/icon-time.png").reserve-form__icon
+					.reserve-form__input-wrapper
+						input.reserve-form__input(type="email" name="email" required placeholder="Email Address")
+						img(src="./img/HomePage/icon-envelope.png").reserve-form__icon
+					.reserve-form__input-wrapper
+						input.reserve-form__input(type="text" name="guests" required placeholder="Guests")
+						img(src="./img/HomePage/icon-guest.png").reserve-form__icon
+					.reserve-form__input-wrapper
+						input.reserve-form__input#phone(type="phone" name="phone" required placeholder="Phone Number")
+						img(src="./img/HomePage/icon-reserve-phone.png").reserve-form__icon
+					.reserve-info
+						button(type="submit").reserve-form__submit Make Reservation
+						h4.bottom-info__title.reserve-info__title You can also call
+							.bottom-info__title_pink for a reservation
+						a(href="tel:+380634567890" target="_blank").home-page__phone.home-page__phone_smaller.reserve-info__phone 1-007 000 005

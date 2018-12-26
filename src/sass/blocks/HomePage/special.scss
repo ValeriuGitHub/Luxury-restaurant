@@ -1,0 +1,201 @@
+.special {
+	@extend %clearfix;
+	position: relative;
+	padding-top: 85px;
+	padding-bottom: 65px;
+	@include tablets {
+		padding-top: 70px;
+		padding-bottom: 50px;
+	}
+	@include phones {
+		padding-top: 50px;
+		padding-bottom: 40px;
+	}
+	&-background {
+		background-color: #4c5659;
+		height: 440px;
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		width: 100%;
+	}
+	&__item {
+		&-wrapper {
+			box-shadow: 0px 24px 38px 0px rgba(#000, 0.09);
+			background-color: #fff;
+			width: calc(100% - 15px);
+			margin-bottom: 30px;
+			@include tablets {
+				width: 100%;
+				margin: 0 auto;
+				box-shadow: 0 0 0 0;
+			}
+			&_odd {
+				margin-right: 15px;
+				@include tablets {
+					margin-right: 0px;
+				}
+			}
+			&_even {
+				margin-left: 15px;
+				@include tablets {
+					margin-left: 0px;
+				}
+			}
+		}
+	}
+	&__main {
+		&-title {
+			text-align: center;
+			margin-bottom: 22px;
+			color: #fff;
+		}
+	}
+	&__top {
+		&-info {
+			padding: 42px 42px 0px;
+		}
+	}
+	&__img {
+		max-width: 100%;
+		margin: auto;
+		display: block;
+		@include laptops {
+			margin: 0 auto;
+		}
+	}
+	&__title {
+		font-size: 26px;
+		font-family: "PlayfairDisplay";
+		color: $black;
+		text-align: center;
+		letter-spacing: 1px;
+	}
+	&__text {
+		line-height: 1.857;
+		text-align: center;
+		border-bottom: 1px solid #e1e1e1;
+		padding-bottom: 55px;
+		margin: 10px 8px;
+	}
+	&-under {
+		&__img {
+			position: absolute;
+			right: 12.6%;
+			display: block;
+			bottom: -38px;
+			z-index: -1;
+			@include desktops {
+				bottom: 0px;
+				right: 5%;
+			}
+			@include laptops {
+				display: none;
+			}
+		}
+	}
+	&__price {
+		font-size: 32px;
+		letter-spacing: 1.7px;
+		font-family: "PlayfairDisplay";
+		color: $orange;
+		text-transform: uppercase;
+		margin-top: -2px;
+		@include laptops {
+			font-size: 28px;
+		}
+		@include tablets {
+			font-size: 24px;
+		}
+		@include phones {
+			font-size: 22px;
+		}
+		&-sign {
+			display: inline-block;
+			font-size: 20px;
+			vertical-align: super;
+			@include laptops {
+				font-size: 18px;
+			}
+			@include tablets {
+				font-size: 16px;
+			}
+			@include phones {
+				font-size: 14.5px;
+			}
+		}
+	}
+}
+
+.HomePage-special-dots {
+	position: absolute;
+	display: block;
+	width: auto;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	right: -3px;
+	top: -39px;
+	display: flex;
+	@include laptops {
+		top: -41px;
+	}
+	@include phones {
+		top: -20px;
+		right: 50%;
+		margin-right: -57px;
+	}
+	@extend %list;
+	& li {
+		position: relative;
+		display: inline-block;
+		width: 14px;
+		height: 14px;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+		margin-right: 5px;
+		& button {
+			color: transparent;
+			background: transparent;
+			padding: 0px;
+			letter-spacing: 0px;
+			width: 0px;
+			height: 0px;
+			&:hover, &:focus {
+				outline: none;
+				&:before {
+					opacity: 1;
+				}
+			}
+			&:before {
+				font-family: 'slick';
+				font-size: 6px;
+				line-height: 20px;
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				content: '';
+				border-radius: 50%;
+				background-color: transparent;
+				border: 2px solid #fff;
+				text-align: center;
+				opacity: 1;
+				color: black;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		}
+		&.slick-active {
+			& button {
+				&:before {
+					opacity: 1;
+					background-color: transparent;
+					color: black;
+					border-color: $orange;
+				}
+			}
+		}
+	}
+}

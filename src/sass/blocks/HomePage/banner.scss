@@ -1,0 +1,306 @@
+.banner {
+	&__list {
+		@extend %list;
+	}
+	&__main-title {
+		font-size: 56px;
+		line-height: 1;
+		position: absolute;
+		top: 50%;
+		margin-top: -60px;
+		@include desktops {
+			left: 63px;
+		}
+		@include tablets {
+			top: 52%;
+			font-size: 48px;
+		}
+		@include phones {
+			left: 40px;
+			top: 55%;
+			font-size: 30px;
+		}
+	}
+	&__item {
+		width: 100%;
+		height: 570px;
+		position: relative;
+		margin-bottom: -5px;
+	}
+	&__img {
+		display: block;
+		width: 100%;
+		max-height: 570px;
+		object-fit: cover;
+		height: 590px;
+		max-height: 570px;
+	}
+	&__under {
+		&-title {
+			font-size: 40px;
+			@include laptops {
+				font-size: 35px;
+			}
+			@include tablets {
+				font-size: 25px;
+			}
+			@include phones {
+				font-size: 23px;
+			}
+			&_left {
+				margin-left: 11px;
+			}
+		}
+	}
+	&-under {
+		background-color: #edf1f3;
+		border-bottom: 1px solid $banner-b;
+		padding: 23px 0 21px;
+		&__wrapper {
+			display: flex;
+			@include tablets {
+				display: block;
+			}
+		}
+		&__title {
+			color: $black;
+			text-transform: uppercase;
+			line-height: 1.429;
+			margin-right: 16px;
+			font-size: 14px;
+			letter-spacing: 0px;
+			@include laptops {
+				font-size: 13px;
+				margin-right: 10px;
+			}
+			@include tablets {
+				font-size: 12px;
+			}
+			@include phones {
+				font-size: 11.5px;
+				margin-right: 0px;
+			}
+			&_orange {
+				color: $orange;
+				font-size: 16px;
+				@include laptops {
+					font-size: 14.5px;
+					margin-right: 10px;
+				}
+				@include tablets {
+					font-size: 12.5px;
+				}
+				@include phones {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+	&-explore {
+		position: relative;
+		margin-top: -145px;
+		margin-right: 259px;
+		@include laptops {
+			margin-top: -24px;
+			margin-right: 10px;
+		}
+		@include tablets {
+			margin-top: -211px;
+			margin-right: 0px;
+			position: absolute;
+			left: 50%;
+			margin-left: -101px;
+		}
+		@include phones {
+			margin-top: -226px;
+		}
+		&__img {
+			display: block;
+		}
+		&__icon {
+			height: 54px;
+		}
+		&__circle {
+			position: absolute;
+			border: 3px solid $pink;
+			border-radius: 50%;
+			background-color: #0b0b13;
+			width: 77px;
+			height: 77px;
+			left: 50%;
+			top: -15%;
+			margin-left: -38.5px;
+			display: flex;
+			justify-content: center;
+			align-items: flex-end;
+		}
+		&__text {
+			font-size: 22px;
+			color: #fff;
+			text-align: center;
+			width: 120px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -60px;
+			line-height: 1.2;
+			margin-top: -31px;
+			font-family: "PlayfairDisplay";
+		}
+	}
+	&-reviews {
+		display: flex;
+		align-items: center;
+		position: relative;
+		margin-right: 74px;
+		@include laptops {
+			margin-right: 20px;
+		}
+		@include tablets {
+			margin-right: 0px;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			right: -36px;
+			height: 89px;
+			background-color: $banner-b;
+			width: 1px;
+			@include laptops {
+				right: -10px;
+			}
+			@include tablets {
+				display: none;
+			}
+		}
+		&__icon {
+			margin-right: 12px;
+			@include laptops {
+				margin-right: 10px;
+			}
+		}
+		&__circle {
+			border-radius: 50%;
+			background-color: $orange;
+			width: 45px;
+			height: 45px;
+			position: relative;
+			&:hover {
+				background-color: $pink;
+			}
+			&-second {
+				height: 37px;
+				width: 37px;
+				border-radius: 50%;
+				border: 1px solid #fff;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: absolute;
+				top: 50%;
+				margin-top: -18.5px;
+				left: 50%;
+				margin-left: -18.5px;
+			}
+		}
+		&__angle-icon {
+			color: #14141d;
+			font-size: 20px;
+		}
+	}
+	&-phone {
+		display: flex;
+		align-items: center;
+		@include tablets {
+			justify-content: center;
+		}
+		&__icon {
+			margin-right: 21px;
+			@include laptops {
+				margin-right: 10px;
+			}
+			@include phones {
+				width: 30px;
+			}
+		}
+		&__phone {
+			border-left: 1px solid $banner-b;
+			margin-left: 3px;
+			position: relative;
+			padding-left: 19px;
+			letter-spacing: 2px;
+			@include laptops {
+				padding-left: 9px;
+			}
+		}
+	}
+}
+
+.HomePage-banner-dots {
+	position: absolute;
+	display: block;
+	width: auto;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	left: 29px;
+	top: 45.5%;
+	@include phones {
+		left: 10px;
+	}
+	@extend %list;
+	& li {
+		position: relative;
+		display: inline-block;
+		width: 14px;
+		height: 14px;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+		margin-bottom: 3px;
+		& button {
+			color: transparent;
+			background: transparent;
+			padding: 0px;
+			letter-spacing: 0px;
+			width: 0px;
+			height: 0px;
+			&:hover, &:focus {
+				outline: none;
+				&:before {
+					opacity: 1;
+				}
+			}
+			&:before {
+				font-family: 'slick';
+				font-size: 6px;
+				line-height: 20px;
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				content: '';
+				border-radius: 50%;
+				background-color: transparent;
+				border: 2px solid #fff;
+				text-align: center;
+				opacity: 1;
+				color: black;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		}
+		&.slick-active {
+			& button {
+				&:before {
+					opacity: 1;
+					background-color: transparent;
+					color: black;
+					border-color: $orange;
+				}
+			}
+		}
+	}
+}

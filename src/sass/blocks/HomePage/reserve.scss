@@ -1,0 +1,135 @@
+.reserve {
+	padding-top: 87.5px;
+	padding-bottom: 95px;
+	@include tablets {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+	@include phones {
+		padding-top: 50px;
+		padding-bottom: 40px;
+	}
+	@extend %clearfix;
+	&-wrapper {
+		background-color: #edf1f3;
+	}
+	&__title {
+		text-align: center;
+		margin-bottom: 26px;
+	}
+	&-left {
+		width: 50%;
+		float: left;
+		margin-right: 14px;
+		@include laptops {
+			width: 100%;
+			float: none;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 20px;
+		}
+		&__img {
+			@include tablets {
+				max-width: 100%;
+			}
+			@include phones {
+				height: 200px;
+			}
+		}
+	}
+	&-right {
+		width: calc(50% - 14px);
+		float: left;
+		@include laptops {
+			width: 100%;
+			float: none;
+			display: flex;
+			justify-content: center;
+		}
+	}
+	&-form {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 21px 0px 0px;
+		@include laptops {
+			justify-content: center;
+		}
+		&__input {
+			width: 270px;
+			padding-bottom: 11.5px;
+			padding-top: 11.5px;
+			border: none;
+			background-color: transparent;
+			border-bottom: 1px solid #c7d1d6;
+			margin-bottom: 23px;
+			&::placeholder {
+				color: #363d43;
+				font-weight: normal;
+				letter-spacing: 1px;
+			}
+			&:hover, &:focus {
+				border-color: transparent;
+				border-bottom-color: #000;
+				color: #000;
+			}
+			&-wrapper {
+				position: relative;
+				margin-right: 30px;
+				@include laptops {
+					margin: 0px 15px;
+				}
+				&:nth-child(2n) {
+					margin-right: 0px;
+					@include laptops {
+						margin-right: 15px;
+					}
+				}
+			}
+		}
+		&__icon {
+			position: absolute;
+			right: 0;
+			top: 10px;
+		}
+		&__submit {
+			padding: 17px 28px;
+			@include tablets {
+				margin: 0 auto;
+				margin-bottom: 30px;
+			}
+		}
+	}
+	&-info {
+		display: flex;
+		margin-top: 24px;
+		align-items: center;
+		justify-content: space-between;
+		@include tablets {
+			display: block;
+		}
+		&__title {
+			font-size: 13px;
+			margin-left: 42px;
+			@include tablets {
+				margin-left: 0px;
+				display: inline-block;
+			}
+		}
+		&__phone {
+			letter-spacing: 1.5px;
+			margin-left: 12px;
+			font-size: 26px;
+			@include laptops {
+				font-size: 20px;
+			}
+			@include tablets {
+				display: inline-block;
+				margin-top: -3px;
+				font-size: 22px;
+			}
+			@include phones {
+				font-size: 19px;
+			}
+		}
+	}
+}

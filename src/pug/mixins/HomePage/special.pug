@@ -1,0 +1,14 @@
+mixin special(title, url, wrapperClass, text, phone, price)
+	li.special__item
+		div(class=`special__item-wrapper special__item-wrapper_${wrapperClass}`)
+			img(src=url).special__img
+			.special__top-info
+				h3.special__title #{title}
+				p.special__text #{text}
+			.bottom-info
+				h4.bottom-info__title Home
+					.bottom-info__title_pink Delivery
+				a(href="tel:+380634567890" target="_blank").home-page__phone.home-page__phone_smaller #{phone}
+				.special__price
+					span.special__price-sign $
+					| #{price}

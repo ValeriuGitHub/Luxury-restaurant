@@ -14,7 +14,7 @@ body {
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
-	color: $black;
+	color: #5c6369;
 	font-family: 'Sintony';
 	font-weight: bold;
 	font-size: 14px;
@@ -72,14 +72,21 @@ button {
 	border-radius: 4px;
 	background-color: $orange;
 	color: #fff;
-	padding: 15px 35px;
 	font-size: 14px;
 	text-align: center;
 	font-family: "Sintony";
 	text-transform: uppercase;
 	font-weight: bold;
+	padding: 17px 34px;
+	font-family: Sintony;
+	font-weight: 700;
+	letter-spacing: 0.6px;
 	&:hover, &:focus {
 		background-color: $pink;
+	}
+	@include laptops {
+		font-size: 13.5px;
+		padding: 16px 32px;
 	}
 	@include tablets {
 		font-size: 13px;
@@ -93,9 +100,5 @@ button {
 
 label[for]{cursor:pointer;}
 input~label{cursor:pointer;}
-
 input {outline:none;}
-input:focus, input:hover {border: 1px solid $orange}
-input:focus, input:hover {color: #fff}
-input::placeholder { color: $f-gray; font-weight: normal; letter-spacing: 0.3px}
 input {color: $f-gray;}
