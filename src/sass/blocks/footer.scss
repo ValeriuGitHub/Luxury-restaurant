@@ -296,9 +296,9 @@
 	}
 }
 
-.footer-form__input::placeholder { 
-	color: $f-gray;
-	font-weight: normal; 
-	letter-spacing: 0.3px
+.footer-form__input::placeholder {
+	font-weight: normal;
+	letter-spacing: 1px;
+	color: #e6e9eb
 }
 

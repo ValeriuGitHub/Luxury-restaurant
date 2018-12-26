@@ -1,6 +1,6 @@
 .clients {
 	padding-top: 90px;
-	padding-bottom: 97px;
+	padding-bottom: 96px;
 	position: relative;
 	@include tablets {
 		padding-top: 70px;
@@ -21,7 +21,7 @@
 			color: #fffaf1;
 			text-transform: uppercase;
 			text-align: center;
-			margin-bottom: 5px;
+			margin-bottom: 2px;
 		}
 	}
 	&__star {
@@ -47,9 +47,26 @@
 		text-align: center;
 		width: 66%;
 		margin: 0 auto;
-		margin-bottom: 21px;
+		margin-bottom: 23px;
 		@include tablets {
 			width: 80%;
+		}
+	}
+	&__no {
+		&-user {
+			width: 75px;
+			height: 75px;
+			border-radius: 50%;
+			display: block;
+			&_white {
+				background-color: #fff;
+			}
+			&_green {
+				background-color: green;
+			}
+			&_dark {
+				background-color: black;
+			}
 		}
 	}
 	&__quote {
@@ -59,6 +76,9 @@
 			margin-top: -5px;
 			@include tablets {
 				left: 5%;
+			}
+			@include phones {
+				left: 2%;
 			}
 		}
 		&-right {
@@ -70,6 +90,7 @@
 			}
 			@include phones {
 				top: 60%;
+				right: 1.5%;
 			}
 		}
 	}
@@ -104,9 +125,14 @@
 		}
 	}
 	&__avatar {
+		margin-left: 6px;
+		@include laptops {
+			margin-left: 0px;
+		}
 		&-wrapper {
 			display: flex;
 			justify-content: center;
+			margin-bottom: 4px;
 		}
 	}
 }

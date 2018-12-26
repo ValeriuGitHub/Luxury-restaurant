@@ -17,11 +17,7 @@ $banner-b: #dde3e7;
 @import "./blocks/header.scss";
 @import "./blocks/footer.scss";
 
-// Home Page
+// Styles for page
 
-@import "./blocks/HomePage/banner.scss";
-@import "./blocks/HomePage/about.scss";
-@import "./blocks/HomePage/special.scss";
-@import "./blocks/HomePage/menu.scss";
-@import "./blocks/HomePage/clients.scss";
-@import "./blocks/HomePage/reserve.scss";
+@import "./pages/index.scss";
+

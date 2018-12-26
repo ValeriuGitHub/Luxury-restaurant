@@ -2,7 +2,7 @@
 	@extend %clearfix;
 	position: relative;
 	padding-top: 85px;
-	padding-bottom: 86px;
+	padding-bottom: 88px;
 	overflow: hidden;
 	@include tablets {
 		padding-top: 70px;
@@ -72,6 +72,7 @@
 		display: block;
 		@include laptops {
 			height: 286px;
+			margin: 0 auto;
 		}
 		@include tablets {
 			height: 341px;
@@ -85,7 +86,6 @@
 		letter-spacing: 1px;
 	}
 	&__text {
-		color: #5c6369;
 		line-height: 1.857;
 		text-align: center;
 		border-bottom: 1px solid #e1e1e1;
@@ -145,91 +145,68 @@
 
 .HomePage-special-dots {
 	position: absolute;
-	bottom: -50px;
 	display: block;
-	width: 0%;
+	width: auto;
 	padding: 0;
 	list-style: none;
 	text-align: center;
-	margin-left: 5px;
-	right: 13.3%;
-	top: -19%;
+	right: -3px;
+	top: -39px;
 	display: flex;
-	@extend %list;
 	@include laptops {
-		right: 19.3%;
+		top: -41px;
 	}
-	@include tablets {
-		right: 34.3%;
-		top: -11%;
+	@extend %list;
+	& li {
+		position: relative;
+		display: inline-block;
+		width: 14px;
+		height: 14px;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+		margin-right: 5px;
+		& button {
+			color: transparent;
+			background: transparent;
+			padding: 0px;
+			letter-spacing: 0px;
+			width: 0px;
+			height: 0px;
+			&:hover, &:focus {
+				outline: none;
+				&:before {
+					opacity: 1;
+				}
+			}
+			&:before {
+				font-family: 'slick';
+				font-size: 6px;
+				line-height: 20px;
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				content: '';
+				border-radius: 50%;
+				background-color: transparent;
+				border: 2px solid #fff;
+				text-align: center;
+				opacity: 1;
+				color: black;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+		}
+		&.slick-active {
+			& button {
+				&:before {
+					opacity: 1;
+					background-color: transparent;
+					color: black;
+					border-color: $orange;
+				}
+			}
+		}
 	}
-	@include phones {
-		right: 53.3%;
-		top: -140px;
-	}
-}
-
-.HomePage-special-dots li {
-	position: relative;
-	display: inline-block;
-	width: 25px;
-	height: 18px;
-	padding: 0;
-	display: flex;
-	flex-direction: column;
-	cursor: pointer;
-}
-
-.HomePage-special-dots li button {
-	font-size: 0;
-	line-height: 0;
-	display: block;
-	width: 20px;
-	height: 20px;
-	padding: 5px;
-	cursor: pointer;
-	color: transparent;
-	border: 0;
-	outline: none;
-	background: transparent;
-}
-
-.HomePage-special-dots li button:hover,
-.HomePage-special-dots li button:focus {
-	outline: none;
-}
-
-.HomePage-special-dots li button:hover:before,
-.HomePage-special-dots li button:focus:before {
-	opacity: 1;
-}
-.slick-dotted.slick-slider {
-	margin-bottom: 0px;
-}
-
-.HomePage-special-dots li button:before {
-	font-family: 'slick';
-	font-size: 6px;
-	line-height: 20px;
-	position: absolute;
-	top: 100px;
-	left: 100px;
-	width: 14px;
-	height: 14px;
-	content: '•';
-	border-radius: 50%;
-	background-color: transparent;
-	border: 2px solid #fff;
-	text-align: center;
-	opacity: 1;
-	color: black;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.HomePage-special-dots li.slick-active button:before {
-	opacity: 1;
-	background-color: transparent;
-	color: black;
-	border-color: $orange;
 }
