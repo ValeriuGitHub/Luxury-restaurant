@@ -12,18 +12,16 @@
 				content: "";
 				display: inline-block;
 				vertical-align: middle;
-				height: 50px;
-				width: 50px;
-				top: 32px;
-				position: absolute;
+				height: 31px;
+				width: 41px;
 			}
 			&:before {
 				background: url("./img/About Us/left-leaf.png") no-repeat;
-				left: -47px;
+				margin-right: 10px;
 			}
 			&:after {
 				background: url("./img/About Us/right-leaf.png") no-repeat;
-				right: -62px;
+				margin-left: 10px;
 			}
 		}
 	}
