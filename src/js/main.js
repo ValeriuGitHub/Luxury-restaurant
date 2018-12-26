@@ -51,6 +51,17 @@ $('.special__list').slick({
 	arrows : false,
 	dots: true,
 	dotsClass: "HomePage-special-dots",
+	slidesToScroll: 2,
+	slidesToShow: 2,
+	responsive: [
+		{
+			breakpoint: 851,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+	]
 });
 
 // HomePage - Menu

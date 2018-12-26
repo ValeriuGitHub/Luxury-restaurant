@@ -52,23 +52,6 @@
 			width: 80%;
 		}
 	}
-	&__no {
-		&-user {
-			width: 75px;
-			height: 75px;
-			border-radius: 50%;
-			display: block;
-			&_white {
-				background-color: #fff;
-			}
-			&_green {
-				background-color: green;
-			}
-			&_dark {
-				background-color: black;
-			}
-		}
-	}
 	&__quote {
 		position: absolute;
 		&-left {

@@ -30,7 +30,9 @@
 		}
 		&__img {
 			@include tablets {
-				width: 100%;
+				max-width: 100%;
+			}
+			@include phones {
 				height: 200px;
 			}
 		}

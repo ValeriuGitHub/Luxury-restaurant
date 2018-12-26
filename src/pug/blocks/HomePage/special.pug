@@ -3,20 +3,29 @@
 	.container
 		h2.medium-title.special__main-title Today Special
 		ul.special__list
-			+special('Food Name one', 'Food Name two',
-			'./img/HomePage/special-item3.jpg', './img/HomePage/special-item4.jpg',
+			+special('Food Name one', './img/HomePage/special-item3.jpg',
+			'odd',
 			`printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.`,
+			'1-008 005 006', '89.00')
+			+special('Food Name two', './img/HomePage/special-item4.jpg',
+			'even',
 			`printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.`,
-			'1-008 005 006', '1-008 005 006', '89.00', '99.00')
-			+special('Food Name three', 'Food Name four',
-			'./img/HomePage/special-item1.jpg', './img/HomePage/special-item2.jpg',
+			'1-008 005 006', '99.00')
+			+special('Food Name three', 'https://picsum.photos/570/420?image=0',
+			'odd',
 			`printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.`,
+			'1-008 005 006', '109.00')
+			+special('Food Name four', './img/HomePage/special-item2.jpg',
+			'even',
 			`printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.`,
-			'1-008 005 006', '1-008 005 006', '322.00', '666.00')
-			+special('Food Name five', 'Food Name six',
-			'./img/HomePage/special-item5.jpg', './img/HomePage/special-item6.jpg',
+			'1-008 005 006', '6.66')
+			+special('Food Name five', './img/HomePage/special-item5.jpg',
+			'odd',
 			`printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.`,
+			'1-008 005 006', '1000.00')
+			+special('Food Name six', './img/HomePage/special-item6.jpg',
+			'even',
 			`printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.`,
-				'1-008 005 006', '1-008 005 006', '545.00', '1000.00')
+			'1-008 005 006', '999.00')
 		.special-under
 			img(src="./img/HomePage/under-special.jpg").special-under__img

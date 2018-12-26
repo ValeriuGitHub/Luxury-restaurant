@@ -2,11 +2,10 @@
 	@extend %clearfix;
 	position: relative;
 	padding-top: 85px;
-	padding-bottom: 88px;
-	overflow: hidden;
+	padding-bottom: 65px;
 	@include tablets {
 		padding-top: 70px;
-		padding-bottom: 70px;
+		padding-bottom: 50px;
 	}
 	@include phones {
 		padding-top: 50px;
@@ -20,39 +19,29 @@
 		top: 0;
 		width: 100%;
 	}
-	&-left {
-		width: calc(50% - 15px);
-		float: left;
-		margin-right: 15px;
-		box-shadow: 0px 24px 38px 0px rgba(#000, 0.09);
-		background-color: #fff;
-		@include laptops {
-			width: calc(50% - 10px);
-			margin-right: 10px;
-		}
-		@include tablets {
-			width: 100%;
-			float: none;
-			margin-right: 0px;
+	&__item {
+		&-wrapper {
+			box-shadow: 0px 24px 38px 0px rgba(#000, 0.09);
+			background-color: #fff;
+			width: calc(100% - 15px);
 			margin-bottom: 30px;
-			box-shadow: 0;
-		}
-	}
-	&-right {
-		width: calc(50% - 15px);
-		float: left;
-		margin-left: 15px;
-		box-shadow: 0px 24px 38px 0px rgba(#000, 0.09);
-		background-color: #fff;
-		@include laptops {
-			width: calc(50% - 10px);
-			margin-left: 10px;
-		}
-		@include tablets {
-			width: 100%;
-			float: none;
-			margin-left: 0px;
-			box-shadow: 0;
+			@include tablets {
+				width: 100%;
+				margin: 0 auto;
+				box-shadow: 0 0 0 0;
+			}
+			&_odd {
+				margin-right: 15px;
+				@include tablets {
+					margin-right: 0px;
+				}
+			}
+			&_even {
+				margin-left: 15px;
+				@include tablets {
+					margin-left: 0px;
+				}
+			}
 		}
 	}
 	&__main {
@@ -68,14 +57,11 @@
 		}
 	}
 	&__img {
-		height: 422px;
+		max-width: 100%;
+		margin: auto;
 		display: block;
 		@include laptops {
-			height: 286px;
 			margin: 0 auto;
-		}
-		@include tablets {
-			height: 341px;
 		}
 	}
 	&__title {
@@ -95,7 +81,6 @@
 	&-under {
 		&__img {
 			position: absolute;
-			position: absolute;
 			right: 12.6%;
 			display: block;
 			bottom: -38px;
@@ -105,8 +90,7 @@
 				right: 5%;
 			}
 			@include laptops {
-				right: -7.4%;
-				bottom: 34px;
+				display: none;
 			}
 		}
 	}
@@ -155,6 +139,11 @@
 	display: flex;
 	@include laptops {
 		top: -41px;
+	}
+	@include phones {
+		top: -20px;
+		right: 50%;
+		margin-right: -57px;
 	}
 	@extend %list;
 	& li {
