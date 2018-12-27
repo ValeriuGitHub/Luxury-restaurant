@@ -102,8 +102,6 @@ $('.cook-slider__list').slick({
 	dotsClass: "about-us__cook-dots",
 	slidesToScroll: 4,
 	slidesToShow: 4,
-	// rtl: true,
-	// centerPadding: '30px',
 	responsive: [
 		{
 			breakpoint: 1024,
