@@ -94,3 +94,37 @@ $('.clients__list').slick({
 	nextArrow: $('#clients__next'),
 });
 
+// About Us - Cook
+
+$('.cook-slider__list').slick({
+	arrows : false,
+	dots: true,
+	dotsClass: "about-us__cook-dots",
+	slidesToScroll: 4,
+	slidesToShow: 4,
+	// rtl: true,
+	// centerPadding: '30px',
+	responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		},
+		{
+			breakpoint: 501,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+	]
+});

@@ -74,6 +74,9 @@
 		margin: 0 auto;
 		padding: 0px 10px;
 	}
+	&_without-padding {
+		padding: 0;
+	}
 }
 
 .slick-dotted.slick-slider {

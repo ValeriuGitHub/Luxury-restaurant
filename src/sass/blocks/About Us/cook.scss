@@ -1,0 +1,125 @@
+.cook {
+	padding-top: 89px;
+	padding-bottom: 100px;
+	&-wrapper {
+		background: url("./img/About Us/cooks-background.jpg");
+	}
+	&__list {
+		@extend %list;
+	}
+	&__title {
+		text-align: center;
+		margin-bottom: 32px;
+	}
+	&-item {
+		&__img {
+			display: block;
+			max-width: 100%;
+		}
+	}
+	&-slider {
+		&__item {
+			margin-bottom: 33px;
+			&-under {
+				padding: 20px 0px 20px 0px;
+				background-color: #fff;
+			}
+			&-wrapper {
+				width: 270px;
+  				box-shadow: 0px 24px 38px 0px rgba(0, 0, 0, 0.1);
+  				margin: 0 auto;
+			}
+		}
+		&__img {
+			&-wrapper {
+
+			}
+		}
+		&__title {
+			font-size: 15px;
+			color: $black;
+			text-transform: uppercase;
+			text-align: center;
+		}
+	}
+}
+
+.about-us__cook-dots {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	@include laptops {
+
+	}
+	@include phones {
+
+	}
+	@extend %list;
+	& li {
+		position: relative;
+		display: inline-block;
+		width: 14px;
+		height: 14px;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		cursor: pointer;
+		margin-right: 5px;
+		& button {
+			color: transparent;
+			background: transparent;
+			padding: 0px;
+			letter-spacing: 0px;
+			width: 0px;
+			height: 0px;
+			&:hover, &:focus {
+				outline: none;
+				&:before {
+					opacity: 1;
+				}
+			}
+			&:before {
+				font-family: 'slick';
+				font-size: 6px;
+				line-height: 20px;
+				position: absolute;
+				width: 14px;
+				height: 14px;
+				content: '';
+				border-radius: 50%;
+				background-color: transparent;
+				border: 2px solid #fff;
+				text-align: center;
+				opacity: 1;
+				color: black;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+			&:after {
+				content: "";
+				width: 4px;
+				height: 4px;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				border-radius: 50%;
+				margin-left: -2px;
+				margin-top: -2px;
+				background-color: transparent;
+			}
+		}
+		&.slick-active {
+			& button {
+				&:before {
+					opacity: 1;
+					background-color: transparent;
+					color: black;
+					border-color: $orange;
+				}
+				&:after {
+					background-color: $orange;
+				}
+			}
+		}
+	}
+}
