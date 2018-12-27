@@ -1,7 +1,7 @@
 .speciality {
 	position: relative;
 	@extend %clearfix;
-	padding-bottom: 70px;
+	padding-bottom: 54px;
 	&-left {
 		float: left;
 		width: 50%;
@@ -41,8 +41,11 @@
 			margin-bottom: 39px;
 		}
 		&__img {
-			right: 0;
-			position: absolute;
+			display: block;
+			&-wrapper {
+				position: absolute;
+				right: 0;
+			}
 		}
 	}
 }
