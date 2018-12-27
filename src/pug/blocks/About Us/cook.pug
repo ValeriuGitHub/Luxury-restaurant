@@ -4,67 +4,15 @@
 			h2.medium-title.cook__title Our Cooks
 			.cook-slider
 				ul.cook-slider__list
-					li.cook-slider__item
-						.cook-slider__item-wrapper
-							.cook-slider__img-wrapper
-								img(src="./img/About Us/cooks-item1.jpg").cook-item__img
-							.cook-slider__item-under
-								h3.cook-slider__title Cheff. John Cliff
-					li.cook-slider__item
-						.cook-slider__item-wrapper
-							.cook-slider__img-wrapper
-								img(src="./img/About Us/cooks-item2.jpg").cook-item__img
-							.cook-slider__item-under
-								h3.cook-slider__title Cheff. Peter Vasko
-					li.cook-slider__item
-						.cook-slider__item-wrapper
-							.cook-slider__img-wrapper
-								img(src="./img/About Us/cooks-item3.jpg").cook-item__img
-							.cook-slider__item-under
-								h3.cook-slider__title Cheff. Mariya Thomas
-					li.cook-slider__item
-						.cook-slider__item-wrapper
-							.cook-slider__img-wrapper
-								img(src="./img/About Us/cooks-item4.jpg").cook-item__img
-							.cook-slider__item-under
-								h3.cook-slider__title Cheff. James Dico
-					li.cook-slider__item
-						.cook-slider__item-wrapper
-							img(src="./img/About Us/cooks-item5.jpg").cook-item__img
-							.cook-slider__item-under
-								h3.cook-slider__title Cheff. Denzell Tokio
-					li.cook-slider__item
-						.cook-slider__item-wrapper
-							img(src="./img/About Us/cooks-item6.jpg").cook-item__img
-							.cook-slider__item-under
-								h3.cook-slider__title Cheff. Donald Duck
-					li.cook-slider__item
-						.cook-slider__item-wrapper
-							img(src="./img/About Us/cooks-item7.jpg").cook-item__img
-							.cook-slider__item-under
-								h3.cook-slider__title Cheff. Duck Donald
-					li.cook-slider__item
-						.cook-slider__item-wrapper
-							img(src="./img/About Us/cooks-item8.jpg").cook-item__img
-							.cook-slider__item-under
-								h3.cook-slider__title Cheff. Ipsum Dolar
-					li.cook-slider__item
-						.cook-slider__item-wrapper
-							img(src="./img/About Us/cooks-item9.jpg").cook-item__img
-							.cook-slider__item-under
-								h3.cook-slider__title Cheff. Dolar Ipsum
-					li.cook-slider__item
-						.cook-slider__item-wrapper
-							img(src="https://picsum.photos/270/263?image=0").cook-item__img
-							.cook-slider__item-under
-								h3.cook-slider__title Cheff. Lorem Ipsum
-					li.cook-slider__item
-						.cook-slider__item-wrapper
-							img(src="./img/About Us/cooks-item11.jpg").cook-item__img
-							.cook-slider__item-under
-								h3.cook-slider__title Cheff. Ipsum lorem
-					li.cook-slider__item
-						.cook-slider__item-wrapper
-							img(src="./img/About Us/cooks-item12.jpg").cook-item__img
-							.cook-slider__item-under
-								h3.cook-slider__title Cheff. Lorem Ipsum
+					+cook("./img/About Us/cooks-item1.jpg", "Cheff. John Cliff")
+					+cook("./img/About Us/cooks-item2.jpg", "Cheff. Peter Vasko")
+					+cook("./img/About Us/cooks-item3.jpg", "Cheff. Mariya Thomas")
+					+cook("./img/About Us/cooks-item4.jpg", "Cheff. James Dico")
+					+cook("./img/About Us/cooks-item5.jpg", "Cheff. Denzell Tokio")
+					+cook("./img/About Us/cooks-item6.jpg", "Cheff. Donald Duck")
+					+cook("./img/About Us/cooks-item7.jpg", "Cheff. Duck Donald")
+					+cook("./img/About Us/cooks-item8.jpg", "Cheff. James Dico")
+					+cook("./img/About Us/cooks-item9.jpg", "Cheff. John Cliff")
+					+cook("https://picsum.photos/270/263?image=0", "Cheff. Ipsum Dolar")
+					+cook("./img/About Us/cooks-item11.jpg", "Cheff. Mariya Thomas")
+					+cook("./img/About Us/cooks-item12.jpg", "Cheff. Cheff. Lorem Ipsum")
