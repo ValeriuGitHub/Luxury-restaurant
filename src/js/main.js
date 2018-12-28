@@ -10,7 +10,9 @@ $("a[href^='#']").on('click', function (event) {
 // mask
 
 jQuery(function($) {
-	$("input[name=phone]").mask("+38(099) 99-99-999");
+	if($('input[name=phone]').length > 0) {
+		$("input[name=phone]").mask("+38(099) 99-99-999");
+	}
 });
 
 // Header DropDown
@@ -30,99 +32,7 @@ jQuery(function($){
 	});
 });
 
-// HomePage - Banner
+// Pages
 
-$('.banner__list').slick({
-	arrows : false,
-	dots: true,
-	dotsClass: "HomePage-banner-dots",
-});
-
-// HomePage - About
-
-$("#about-button").on('click', function(){
-	$("#about-left__text").toggle("slow", function() {
-	});
-});
-
-// HomePage - Special
-
-$('.special__list').slick({
-	arrows : false,
-	dots: true,
-	dotsClass: "HomePage-special-dots",
-	slidesToScroll: 2,
-	slidesToShow: 2,
-	responsive: [
-		{
-			breakpoint: 851,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
-			}
-		}
-	]
-});
-
-// HomePage - Menu
-
-$(".menu-items__list").not(":first").hide();
-
-$(".menu__item").each(function(i){
-	$(this).attr('data-tab', 'tab'+ i)
-});
-$(".menu-items__list").each(function(i){
-	$(this).attr('data-tab', 'tab'+ i)
-});
-$(".menu__link-text").each(function(i){
-	$(this).attr('data-tab', 'tab'+ i)
-});
-
-$(".menu__item").on('click', function(e){
-	e.preventDefault();
-	let dataTab = $(this).data('tab');
-	$(".menu__link-text").removeClass("menu__link-text_active");
-	$(".menu__link-text").filter('[data-tab='+dataTab+']').addClass("menu__link-text_active");
-	$(".menu-items__list").hide();
-	$(".menu-items__list").filter('[data-tab='+dataTab+']').fadeIn(500);
-});
-
-// HomePage - Clients
-
-$('.clients__list').slick({
-	prevArrow: $('#clients__prev'),
-	nextArrow: $('#clients__next'),
-});
-
-// About Us - Cook
-
-$('.cook-slider__list').slick({
-	arrows : false,
-	dots: true,
-	dotsClass: "about-us__cook-dots",
-	slidesToScroll: 4,
-	slidesToShow: 4,
-	responsive: [
-		{
-			breakpoint: 1200,
-			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 3
-			}
-		},
-		{
-			breakpoint: 900,
-			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2
-			}
-		},
-		{
-			breakpoint: 620,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
-			}
-		}
-	]
-});
+homePage()
+aboutUs()

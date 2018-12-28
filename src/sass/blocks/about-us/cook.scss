@@ -1,5 +1,5 @@
 .cook {
-	padding-top: 89px;
+	padding-top: 88px;
 	padding-bottom: 100px;
 	@include tablets {
 		padding-top: 50px;
@@ -10,7 +10,7 @@
 		padding-bottom: 30px;
 	}
 	&-wrapper {
-		background: url("./img/About Us/cooks-background.jpg");
+		background: url("./img/about-us/cooks-background.jpg");
 	}
 	&__list {
 		@extend %list;
