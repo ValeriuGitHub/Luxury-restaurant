@@ -1,0 +1,78 @@
+.history {
+	padding: 85px 0px 100px;
+	@include tablets {
+		padding-top: 60px;
+		padding-bottom: 65px;
+	}
+	@include phones {
+		padding-top: 35px;
+		padding-bottom: 40px;
+	}
+	&__title {
+		text-align: center;
+		margin-bottom: 25px;
+	}
+	&__text {
+		text-align: center;
+		width: 61%;
+		line-height: 1.857;
+		margin: 0 auto 58px;
+		font-weight: normal;
+		@include laptops {
+			width: 70%;
+			margin-bottom: 40px;
+		}
+		@include tablets {
+			width: 80%;
+			margin-bottom: 30px;
+		}
+		@include phones {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+	&__video {
+		margin: 0 auto;
+		display: block;
+		width: 970px;
+		height: 447px;
+		position: relative;
+		@include laptops {
+			max-width: 100%;
+			max-height: 100%;
+		}
+		@include laptops {
+			height: 350px;
+		}
+		@include phones {
+			height: 250px;
+		}
+	}
+	&__iframe {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&__under {
+		&-video {
+			font-size: 13px;
+			color: $black;
+			text-transform: uppercase;
+			width: calc(100% - 198px);
+			margin-left: 99px;
+			margin-top: 18px;
+			padding-bottom: 16px;
+			border-bottom: 1px solid #e3e3e3;
+			@include laptops {
+				margin-left: 80px;
+				width: calc(100% - 160px);
+			}
+			@include tablets {
+				width: 100%;
+				margin-left: 0px;
+			}
+		}
+	}
+}

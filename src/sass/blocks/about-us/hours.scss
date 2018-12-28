@@ -1,0 +1,71 @@
+.hours {
+	display: flex;
+	width: 100%;
+	padding-top: 83px;
+	padding-bottom: 89px;
+	border-top: 1px solid #e4e4e4;
+	@include tablets {
+		justify-content: space-between;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	@include phones {
+		padding: 30px 25px;
+		display: block;
+	}
+	&__title {
+		width: 34%;
+		@include laptops {
+			width: 30%;
+		}
+		@include tablets {
+			width: auto;
+		}
+		@include phones {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+	}
+	&__text {
+		font-family: "Playfair Display";
+		width: 20.5%;
+		&-top {
+			font-size: 20px;
+			color: #373844;
+			font-style: italic;
+			font-weight: normal;
+			line-height: 1.2;
+			@include laptops {
+				font-size: 18px;
+			}
+			@include tablets {
+				font-size: 16px;
+			}
+			@include phones {
+				font-size: 14px;
+			}
+		}
+		@include tablets {
+			width: auto;
+		}
+		@include phones {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&-bottom {
+			font-size: 30px;
+			color: $orange;
+			@include laptops {
+				font-size: 24px;
+			}
+			@include tablets {
+				font-size: 22px;
+			}
+			@include phones {
+				font-size: 20px;
+				margin-top: -6px;
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+mixin clients(url, text, client)
+	li.clients__item
+		img(src="./img/home-page/quote-left.png").clients__quote.clients__quote-left
+		p.clients__text #{text}
+		.clients__avatar-wrapper
+			img(src=url).clients__avatar
+		h3.clients__title-user #{client}
+		img(src="./img/home-page/quote-right.png").clients__quote.clients__quote-right
+		img(src="./img/home-page/star-icon.png").clients__star

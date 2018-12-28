@@ -13,7 +13,7 @@
 			&-wrapper {
 				&:after {
 					content: "";
-					background: url("./img/HomePage/border-dashed.png");
+					background: url("./img/home-page/border-dashed.png");
 					background-repeat: repeat-x;
 					display: block;
 					width: 100%;
@@ -73,25 +73,25 @@
 		}
 	}
 	&__all {
-		background: url("./img/HomePage/icon-all-orange.png") no-repeat;
+		background: url("./img/home-page/icon-all-orange.png") no-repeat;
 	}
 	&__lunch {
-		background: url("./img/HomePage/icon-lunch-orange.png") no-repeat;
+		background: url("./img/home-page/icon-lunch-orange.png") no-repeat;
 	}
 	&__breakfast {
-		background: url("./img/HomePage/icon-breakfast-orange.png") no-repeat;
+		background: url("./img/home-page/icon-breakfast-orange.png") no-repeat;
 	}
 	&__snacks {
-		background: url("./img/HomePage/icon-snacks-orange.png") no-repeat;
+		background: url("./img/home-page/icon-snacks-orange.png") no-repeat;
 	}
 	&__pizza {
-		background: url("./img/HomePage/icon-pizza-orange.png") no-repeat;
+		background: url("./img/home-page/icon-pizza-orange.png") no-repeat;
 	}
 	&__soups {
-		background: url("./img/HomePage/icon-soups-orange.png") no-repeat;
+		background: url("./img/home-page/icon-soups-orange.png") no-repeat;
 	}
 	&__dinner {
-		background: url("./img/HomePage/icon-dinner-orange.png") no-repeat;
+		background: url("./img/home-page/icon-dinner-orange.png") no-repeat;
 	}
 	&__link {
 		align-items: center;
@@ -127,37 +127,37 @@
 		}
 		&-all {
 			&:hover .menu__all, &:focus .menu__all {
-				background: url("./img/HomePage/icon-all-pink.png") no-repeat;
+				background: url("./img/home-page/icon-all-pink.png") no-repeat;
 			}
 		}
 		&-lunch {
 			&:hover .menu__lunch {
-				background: url("./img/HomePage/icon-lunch-pink.png") no-repeat;
+				background: url("./img/home-page/icon-lunch-pink.png") no-repeat;
 			}
 		}
 		&-breakfast {
 			&:hover .menu__breakfast {
-				background: url("./img/HomePage/icon-breakfast-pink.png") no-repeat;
+				background: url("./img/home-page/icon-breakfast-pink.png") no-repeat;
 			}
 		}
 		&-snacks {
 			&:hover .menu__snacks {
-				background: url("./img/HomePage/icon-snacks-pink.png") no-repeat;
+				background: url("./img/home-page/icon-snacks-pink.png") no-repeat;
 			}
 		}
 		&-pizza {
 			&:hover .menu__pizza {
-				background: url("./img/HomePage/icon-pizza-pink.png") no-repeat;
+				background: url("./img/home-page/icon-pizza-pink.png") no-repeat;
 			}
 		}
 		&-soups {
 			&:hover .menu__soups {
-				background: url("./img/HomePage/icon-soups-pink.png") no-repeat;
+				background: url("./img/home-page/icon-soups-pink.png") no-repeat;
 			}
 		}
 		&-dinner {
 			&:hover .menu__dinner {
-				background: url("./img/HomePage/icon-dinner-pink.png") no-repeat;
+				background: url("./img/home-page/icon-dinner-pink.png") no-repeat;
 			}
 		}
 	}

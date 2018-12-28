@@ -1,0 +1,10 @@
+extends ../templates/common.pug
+include ../mixins/about-us/cook.pug
+block variables
+	- var title = "about-us";
+block inner
+	include ../blocks/about-us/banner.pug
+	include ../blocks/about-us/history.pug
+	include ../blocks/about-us/cook.pug
+	include ../blocks/about-us/speciality.pug
+	include ../blocks/about-us/hours.pug
