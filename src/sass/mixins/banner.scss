@@ -42,3 +42,28 @@
 		}
 	}
 }
+
+.menu {
+	&-banner {
+		&__background {
+			background: url("./img/banner/menu-background.jpg");
+		}
+	}
+}
+
+.shop {
+	&-banner {
+		&__background {
+			background: url("./img/banner/shop-background.jpg");
+		}
+	}
+}
+
+.details {
+	&-banner {
+		&__background {
+			background: url("./img/banner/shop-details-background.jpg");
+		}
+	}
+}
+

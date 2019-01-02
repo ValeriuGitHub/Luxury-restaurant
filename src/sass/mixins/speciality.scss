@@ -8,6 +8,9 @@
 	@include phones {
 		padding-bottom: 10px;
 	}
+	&-background {
+		background-color: #ecf1f4;
+	}
 	&-left {
 		float: left;
 		width: 50%;

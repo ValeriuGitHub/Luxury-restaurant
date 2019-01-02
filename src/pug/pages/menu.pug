@@ -1,0 +1,13 @@
+extends ../templates/common.pug
+include ../mixins/menu-block.pug
+include ../mixins/banner.pug
+include ../mixins/menu.pug
+include ../mixins/speciality.pug
+include ../mixins/hours.pug
+block variables
+	- var title = "menu";
+block inner
+	+banner("Menu", "menu")
+	+menu-block("Menu List View", "padding")
+	+speciality("background")
+	+hours("")
