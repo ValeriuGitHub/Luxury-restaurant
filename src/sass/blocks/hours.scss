@@ -4,6 +4,7 @@
 	padding-top: 83px;
 	padding-bottom: 89px;
 	border-top: 1px solid #e4e4e4;
+	position: relative;
 	@include tablets {
 		justify-content: space-between;
 		padding-top: 60px;
@@ -12,6 +13,15 @@
 	@include phones {
 		padding: 30px 25px;
 		display: block;
+	}
+	&__img {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: -55px;
+		@include tablets {
+			display: none;
+		}
 	}
 	&__title {
 		width: 34%;

@@ -1,4 +1,4 @@
-.banner {
+.homepage-banner {
 	&__list {
 		@extend %list;
 	}
@@ -52,6 +52,9 @@
 			}
 		}
 	}
+}
+
+.banner {
 	&-under {
 		background-color: #edf1f3;
 		border-bottom: 1px solid $banner-b;
@@ -238,7 +241,7 @@
 	}
 }
 
-.home-page-banner-dots {
+.homepage-banner-dots {
 	position: absolute;
 	display: block;
 	width: auto;

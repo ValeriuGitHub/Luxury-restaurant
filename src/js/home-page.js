@@ -1,9 +1,9 @@
 const homePage = function() {
 	// Banner slider
-	$('.banner__list').slick({
+	$('.homepage-banner__list').slick({
 		arrows : false,
 		dots: true,
-		dotsClass: "home-page-banner-dots",
+		dotsClass: "homepage-banner-dots",
 	});
 	// Show-hide text
 	$("#about-button").on('click', function(){

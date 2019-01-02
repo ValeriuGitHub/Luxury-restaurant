@@ -1,7 +1,7 @@
-mixin banner(title, imgCount)
-	li(class="banner__item")
-		img(src=`./img/home-page/banner-${imgCount}-slide.jpg`).banner__img
+mixin homepage-banner(title, imgCount)
+	li(class="banner__item").homepage-banner__item
+		img(src=`./img/home-page/banner-${imgCount}-slide.jpg`).homepage-banner__img
 		.container
-			h1.main-title.banner__main-title #{title}
-				.medium-title.medium-title_white.banner__under-title from
-					span.medium-title_orange.banner__under-title_left luxury restaurent.
+			h1.main-title.homepage-banner__main-title #{title}
+				.medium-title.medium-title_white.homepage-banner__under-title from
+					span.medium-title_orange.homepage-banner__under-title_left luxury restaurent.

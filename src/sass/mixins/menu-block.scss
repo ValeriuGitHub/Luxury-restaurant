@@ -9,23 +9,20 @@
 	}
 	&-wrapper {
 		position: relative;
-		&__img {
-			&-wrapper {
-				&:after {
-					content: "";
-					background: url("./img/home-page/border-dashed.png");
-					background-repeat: repeat-x;
-					display: block;
-					width: 100%;
-					position: absolute;
-					height: 1px;
-					z-index: -1;
-					margin-top: 151px;
-					@include phones {
-						margin-top: 180px;
-					}
-				}
+		&:before {
+			content: "";
+			background: url("./img/menu/border-dashed.png");
+			background-repeat: repeat-x;
+			display: block;
+			width: 100%;
+			position: absolute;
+			height: 1px;
+			top: 153px;
+			@include phones {
+				top: 180px;
 			}
+		}
+		&__img {
 			&-left {
 				position: absolute;
 				top: 10px;
@@ -38,22 +35,20 @@
 					display: none;
 				}
 			}
-		}
-	}
-	&__img {
-		&-right {
-			position: absolute;
-			bottom: -79px;
-			right: 31px;
-			height: 241px;
-			width: 241px;
-			background-size: contain;
-			z-index: 10;
-			@include laptops {
-				bottom: -120px;
-			}
-			@include tablets {
-				display: none;
+			&-right {
+				position: absolute;
+				bottom: -79px;
+				right: 31px;
+				height: 241px;
+				width: 241px;
+				background-size: contain;
+				z-index: 10;
+				@include laptops {
+					bottom: -120px;
+				}
+				@include tablets {
+					display: none;
+				}
 			}
 		}
 	}
@@ -73,25 +68,25 @@
 		}
 	}
 	&__all {
-		background: url("./img/home-page/icon-all-orange.png") no-repeat;
+		background: url("./img/menu/icon-all-orange.png") no-repeat;
 	}
 	&__lunch {
-		background: url("./img/home-page/icon-lunch-orange.png") no-repeat;
+		background: url("./img/menu/icon-lunch-orange.png") no-repeat;
 	}
 	&__breakfast {
-		background: url("./img/home-page/icon-breakfast-orange.png") no-repeat;
+		background: url("./img/menu/icon-breakfast-orange.png") no-repeat;
 	}
 	&__snacks {
-		background: url("./img/home-page/icon-snacks-orange.png") no-repeat;
+		background: url("./img/menu/icon-snacks-orange.png") no-repeat;
 	}
 	&__pizza {
-		background: url("./img/home-page/icon-pizza-orange.png") no-repeat;
+		background: url("./img/menu/icon-pizza-orange.png") no-repeat;
 	}
 	&__soups {
-		background: url("./img/home-page/icon-soups-orange.png") no-repeat;
+		background: url("./img/menu/icon-soups-orange.png") no-repeat;
 	}
 	&__dinner {
-		background: url("./img/home-page/icon-dinner-orange.png") no-repeat;
+		background: url("./img/menu/icon-dinner-orange.png") no-repeat;
 	}
 	&__link {
 		align-items: center;
@@ -127,37 +122,37 @@
 		}
 		&-all {
 			&:hover .menu__all, &:focus .menu__all {
-				background: url("./img/home-page/icon-all-pink.png") no-repeat;
+				background: url("./img/menu/icon-all-pink.png") no-repeat;
 			}
 		}
 		&-lunch {
 			&:hover .menu__lunch {
-				background: url("./img/home-page/icon-lunch-pink.png") no-repeat;
+				background: url("./img/menu/icon-lunch-pink.png") no-repeat;
 			}
 		}
 		&-breakfast {
 			&:hover .menu__breakfast {
-				background: url("./img/home-page/icon-breakfast-pink.png") no-repeat;
+				background: url("./img/menu/icon-breakfast-pink.png") no-repeat;
 			}
 		}
 		&-snacks {
 			&:hover .menu__snacks {
-				background: url("./img/home-page/icon-snacks-pink.png") no-repeat;
+				background: url("./img/menu/icon-snacks-pink.png") no-repeat;
 			}
 		}
 		&-pizza {
 			&:hover .menu__pizza {
-				background: url("./img/home-page/icon-pizza-pink.png") no-repeat;
+				background: url("./img/menu/icon-pizza-pink.png") no-repeat;
 			}
 		}
 		&-soups {
 			&:hover .menu__soups {
-				background: url("./img/home-page/icon-soups-pink.png") no-repeat;
+				background: url("./img/menu/icon-soups-pink.png") no-repeat;
 			}
 		}
 		&-dinner {
 			&:hover .menu__dinner {
-				background: url("./img/home-page/icon-dinner-pink.png") no-repeat;
+				background: url("./img/menu/icon-dinner-pink.png") no-repeat;
 			}
 		}
 	}
@@ -170,15 +165,13 @@
 		margin: 0 auto;
 	}
 	&-items {
-		&__item {
+		&__link {
 			display: flex;
-			width: calc(50% - 30px);
-			float: left;
+			padding: 30px 27px 12px 0;
 			border-bottom: 1px solid #eee;
 			align-items: center;
 			justify-content: space-between;
 			padding: 30px 27px 12px 0;
-			margin-right: 42px;
 			@include laptops {
 				padding: 30px 0px 12px 0px;
 			}
@@ -186,8 +179,17 @@
 				width: 100%;
 				float: none;
 			}
-			&:nth-child(2n) {
+		}
+		&__item {
+			margin-right: 42px;
+			width: calc(50% - 30px);
+			display: block;
+			float: left;
+			&:nth-child(even) {
 				margin-right: 0px;
+			}
+			@include tablets {
+				width: 100%;
 			}
 		}
 		&__title {

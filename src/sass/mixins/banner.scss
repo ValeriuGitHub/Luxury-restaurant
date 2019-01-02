@@ -1,8 +1,6 @@
-.about-banner {
+.banner {
 	position: relative;
 	&__background {
-		background: url("./img/about-us/banner-background.jpg");
-		background-size: cover;
 		padding: 86px 0px;
 		display: block;
 		width: 100%;
@@ -26,13 +24,21 @@
 				width: 41px;
 			}
 			&:before {
-				background: url("./img/about-us/left-leaf.png") no-repeat;
+				background: url("./img/banner/left-leaf.png") no-repeat;
 				margin-right: 10px;
 			}
 			&:after {
-				background: url("./img/about-us/right-leaf.png") no-repeat;
+				background: url("./img/banner/right-leaf.png") no-repeat;
 				margin-left: 10px;
 			}
+		}
+	}
+}
+
+.about {
+	&-banner {
+		&__background {
+			background: url("./img/banner/about-background.jpg");
 		}
 	}
 }
