@@ -39,6 +39,7 @@
 	&-banner {
 		&__background {
 			background: url("./img/banner/about-background.jpg");
+			background-size: cover;
 		}
 	}
 }
@@ -47,6 +48,7 @@
 	&-banner {
 		&__background {
 			background: url("./img/banner/menu-background.jpg");
+			background-size: cover;
 		}
 	}
 }
@@ -55,6 +57,7 @@
 	&-banner {
 		&__background {
 			background: url("./img/banner/shop-background.jpg");
+			background-size: cover;
 		}
 	}
 }
@@ -63,6 +66,7 @@
 	&-banner {
 		&__background {
 			background: url("./img/banner/shop-details-background.jpg");
+			background-size: cover;
 		}
 	}
 }
