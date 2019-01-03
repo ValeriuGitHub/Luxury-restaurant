@@ -1,6 +1,18 @@
 .book {
 	padding-top: 87.5px;
 	padding-bottom: 95px;
+	@include laptops {
+		padding-bottom: 75px;
+		padding-top: 70px;
+	}
+	@include tablets {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	@include phones {
+		padding-top: 35px;
+		padding-bottom: 15px;
+	}
 	&__title {
 		text-align: center;
 		margin-bottom: 24.5px;
@@ -12,6 +24,12 @@
 		width: 62%;
 		margin: 0 auto;
 		font-weight: normal;
+		@include tablets {
+			width: 80%;
+		}
+		@include phones {
+			width: 90%;
+		}
 	}
 	&-form {
 		display: flex;
@@ -19,6 +37,15 @@
 		padding: 43px 0px 0px;
 		@include laptops {
 			justify-content: center;
+		}
+		@include laptops {
+			padding-top: 35px;
+		}
+		@include tablets {
+			padding-top: 25px;
+		}
+		@include phones {
+			padding-top: 18px;
 		}
 		&__submit {
 			margin: 0 auto;
@@ -42,9 +69,15 @@
 				border-bottom-color: #000;
 				color: #000;
 			}
+			@include phones {
+				min-height: 100px;
+			}
 			&-wrapper {
 				width: 100%;
 				position: relative;
+				@include laptops {
+					margin: 0 15px;
+				}
 			}
 			&-icon {
 				margin-top: -5px;
@@ -76,12 +109,22 @@
 				margin-right: 30px;
 				width: calc(33.333% - 20px);
 				@include laptops {
-					margin: 0px 15px;
+					margin: 0 15px;
+					width: calc(33.333% - 30px);
+				}
+				@include tablets {
+					width: calc(50% - 30px);
+				}
+				@include phones {
+					width: 100%;
 				}
 				&:nth-child(3n) {
 					margin-right: 0px;
 					@include laptops {
 						margin-right: 15px;
+					}
+					@include phones {
+						margin-right: 0px;
 					}
 				}
 			}
