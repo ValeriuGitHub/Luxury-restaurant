@@ -52,13 +52,15 @@
 		}
 		&__input {
 			padding-bottom: 14.5px;
-			padding-top: 11.5px;
+			padding-top: 14px;
+			padding-top: -2.5px;
 			width: 100%;
 			border: none;
 			background-color: transparent;
+			height: 42px;
 			border-bottom: 1px solid #c7d1d6;
-			margin-bottom: 27px;
 			padding-left: 41px;
+			margin-bottom: 30px;
 			&::placeholder {
 				color: #363d43;
 				font-weight: normal;

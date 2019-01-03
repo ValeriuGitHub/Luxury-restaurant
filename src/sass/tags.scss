@@ -51,6 +51,10 @@ input {
 	transition: 0.7s;
 }
 
+textarea {
+	transition: 0.7s;
+}
+
 ul {
 	margin: 0px;
 	padding: 0px;
@@ -78,7 +82,6 @@ button {
 	text-transform: uppercase;
 	font-weight: bold;
 	padding: 17px 34px;
-	font-family: Sintony;
 	font-weight: 700;
 	letter-spacing: 0.6px;
 	&:hover, &:focus {

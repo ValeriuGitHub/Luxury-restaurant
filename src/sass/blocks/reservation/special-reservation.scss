@@ -1,0 +1,77 @@
+.reservation {
+	&-wrapper {
+		background: url("./img/reserve/speciality-background.jpg") repeat;
+		padding-top: 92px;
+		padding-bottom: 112px;
+	}
+	&__title {
+		text-align: center;
+		margin-bottom: 27px;
+	}
+	&__list {
+		@extend %list;
+		display: flex;
+	}
+	&__text {
+
+	}
+	&__item {
+		width: 370px;
+		margin-right: 30px;
+		&:nth-child(3n) {
+			margin-right: 0px;
+		}
+	}
+	&-top {
+		&__img {
+			display: block;
+		}
+	}
+	&-bottom {
+		padding: 32px 60px 53px 40px;
+		background-color: #fff;
+		&__title {
+			font-size: 26px;
+			font-family: "Playfair Display";
+			color: $black;
+			margin-bottom: 11.5px;
+		}
+		&__text {
+			font-size: 14px;
+			line-height: 1.857;
+		}
+	}
+}
+
+.contact {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	border: 1px dashed #ffa6c6;
+	margin: 0 auto;
+	padding: 75px 0px;
+	padding-bottom: 103px;
+	&-background {
+		background-color: $pink;
+		width: 370px;
+		padding: 10px;
+	}
+	&__text {
+		font-size: 13px;
+		color: #fff;
+		text-transform: uppercase;
+	}
+	&__link {
+		font-size: 24px;
+		font-family: "Playfair Display";
+		color: #fff;
+		text-transform: uppercase;
+	    display: block;
+    	margin-bottom: 7px;
+	}
+	&-top {
+		margin-bottom: 40px;
+	}
+}
