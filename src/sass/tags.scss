@@ -100,5 +100,13 @@ button {
 
 label[for]{cursor:pointer;}
 input~label{cursor:pointer;}
-input {outline:none;}
-input {color: $f-gray;}
+input {
+	outline:none;
+	color: $f-gray;
+}
+textarea {
+	outline:none;
+	color: $f-gray;
+	resize: none;
+}
+
