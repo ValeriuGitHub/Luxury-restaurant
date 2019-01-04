@@ -1,0 +1,8 @@
+extends ../templates/common.pug
+include ../mixins/banner.pug
+include ../mixins/shop/product.pug
+block variables
+	- var title = "about-us";
+block inner
+	+banner("Shop Listing", "shop")
+	include ../blocks/shop/product.pug

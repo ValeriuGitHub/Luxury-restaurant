@@ -1,0 +1,36 @@
+.product
+	.container
+		h2.medium-title.product__title Our Products
+		ul.product__list
+			+product("Heilroom Bean", "100$", "$120", "5", "1")
+			+product("Green Mung Beans", "$1000", "$1250", "7", "2")
+			+product("laird green ientils", "", "$654", "2", "3")
+			+product("Fava bean", "$90", "$100", "12", "4")
+			+product("whole red lentils", "100$", "$50", "6", "5")
+			+product("chickpeas", "", "$10", "2", "6")
+			+product("puy lentils", "$40", "$55", "3", "5", "7")
+			+product("black eyed bean", "", "$80", "3", "8")
+			+product("adzuki beans", "120$", "$140", "5", "9")
+			+product("cranberry bean", "", "$1", "3", "10")
+			+product("Yellow split lentils", "109$", "$140", "5", "11")
+			+product("green peas", "$180", "$220", "4", "12")
+		.product-pagination
+			ul.product-pagination__list
+				li.product-pagination__item
+					a(href="").product-pagination__link.product-pagination__next
+						i.fa.fa-chevron-left.product-pagination__icon
+						.product-pagination__text-next Next
+				li.product-pagination__item
+					a(href="").product-pagination__link.product-pagination__gray
+						| 1-3
+				li.product-pagination__item
+					a(href="").product-pagination__link.product-pagination__gray
+						| 3-9
+				li.product-pagination__item
+					a(href="").product-pagination__link.product-pagination__gray
+						| 9-12
+				li.product-pagination__item
+					a(href="").product-pagination__link.product-pagination__prev
+						.product-pagination__text-prev Prev
+						i.fa.fa-chevron-right.product-pagination__icon
+
