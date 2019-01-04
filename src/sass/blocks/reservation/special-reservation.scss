@@ -131,21 +131,26 @@
 		}
 	}
 	&__link {
-		font-size: 24px;
-		font-family: "Playfair Display";
-		color: #fff;
-		text-transform: uppercase;
-	    display: block;
-    	margin-bottom: 7px;
-    	@include laptops {
-    		font-size: 22px;
-    	}
-    	@include tablets {
-    		font-size: 19px;
-    	}
-    	@include phones {
-    		font-size: 16px;
-    	}
+		&:hover .contact__link-text {
+			color: $orange;
+		}
+		&-text {
+			font-size: 24px;
+			font-family: "Playfair Display";
+			color: #fff;
+			text-transform: uppercase;
+			display: block;
+			margin-bottom: 7px;
+			@include laptops {
+				font-size: 22px;
+			}
+			@include tablets {
+				font-size: 19px;
+			}
+			@include phones {
+				font-size: 16px;
+			}
+		}
 	}
 	&-top {
 		margin-bottom: 40px;
