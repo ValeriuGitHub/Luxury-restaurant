@@ -1,5 +1,5 @@
 mixin product(title, price, prevPrice, counter, urlNumber)
-	li.product__item
+	li.product__item#card
 		.product-top
 			img(src=`./img/shop/product-item${urlNumber}.jpg`).product-top__img
 		.product-bottom
@@ -12,3 +12,8 @@ mixin product(title, price, prevPrice, counter, urlNumber)
 		.product__like
 			.product__counter #{counter}
 			img(src="./img/shop/star-icon.png").product__star-icon
+		.product-wrap
+			a(href="").product-wrap__circle
+				img(src="./img/shop/icon-cart.png").product-wrap__img
+			a(href="").product-wrap__circle
+				img(src="./img/shop/icon-wishlist.png").product-wrap__img

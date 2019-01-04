@@ -1,4 +1,4 @@
-const aboutUs = function() {
+function aboutUs() {
 	$('.cook-slider__list').slick({
 		arrows : false,
 		dots: true,

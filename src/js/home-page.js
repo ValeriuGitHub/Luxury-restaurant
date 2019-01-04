@@ -1,4 +1,4 @@
-const homePage = function() {
+function homePage() {
 	// Banner slider
 	$('.homepage-banner__list').slick({
 		arrows : false,
