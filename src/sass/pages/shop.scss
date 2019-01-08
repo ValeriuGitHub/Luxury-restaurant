@@ -1,0 +1,10 @@
+@import "../blocks/shop/product.scss";
+
+.shop {
+	&-banner {
+		&__background {
+			background: url("./img/banner/shop-background.jpg");
+			background-size: cover;
+		}
+	}
+}
