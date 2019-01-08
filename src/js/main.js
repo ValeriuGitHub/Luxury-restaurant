@@ -34,5 +34,6 @@ jQuery(function($){
 
 // Pages
 
-homePage()
-aboutUs()
+homePage();
+aboutUs();
+shop();
