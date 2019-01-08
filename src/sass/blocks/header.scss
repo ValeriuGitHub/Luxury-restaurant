@@ -5,6 +5,7 @@
 	align-items: center;
 	@include laptops {
 		display: block;
+		text-align: center;
 	}
 	&-logo {
 		margin-right: 52.5px;
@@ -45,7 +46,7 @@
 				margin: 0px 10px;
 			}
 			@include phones {
-				font-size: 9px;
+				font-size: 10px;
 				margin: 0 3.5px;
 			}
 		}
@@ -56,6 +57,7 @@
 		border-radius: 5px;
 		@include laptops {
 			display: inline-block;
+			vertical-align: middle;
 		}
 		@include tablets {
 			font-size: 12px;
@@ -115,17 +117,10 @@
 			color: $orange;
 		}
 		@include laptops {
-			display: block;
-			float: left;
-			width: 41%;
+			display: inline-block;
+			vertical-align: middle;
 			margin-right: 20px;
-			text-align: right;
-		}
-		@include tablets {
-			width: 38.5%;
-		}
-		@include phones {
-			width: 20%;
+			margin-top: 5px;
 		}
 		&__img {
 			position: relative;
@@ -137,12 +132,16 @@
 			transition: 0.7s;
 			@include laptops {
 				margin-right: 4px;
+				margin-left: 8px;
 			}
 			&_active {
 				transform: rotate(180deg);
 				transition: 0.7s;
 				margin-left: 15px;
 				margin-top: 2px;
+				@include laptops {
+					margin-left: 8px;
+				}
 			}
 		}
 		&__counter {
