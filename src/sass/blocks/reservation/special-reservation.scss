@@ -141,6 +141,7 @@
 			text-transform: uppercase;
 			display: block;
 			margin-bottom: 7px;
+			transition: 0.3s;
 			@include laptops {
 				font-size: 22px;
 			}
