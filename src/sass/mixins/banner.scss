@@ -71,3 +71,12 @@
 	}
 }
 
+.reservation {
+	&-banner {
+		&__background {
+			background: url("./img/banner/reservation-background.jpg");
+			background-size: cover;
+		}
+	}
+}
+
