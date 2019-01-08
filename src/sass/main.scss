@@ -16,17 +16,18 @@ $banner-b: #dde3e7;
 
 @import "./blocks/header.scss";
 @import "./blocks/footer.scss";
-@import "./blocks/hours.scss";
-@import "./blocks/speciality.scss";
 
 // Style for mixins
 
 @import "./mixins/banner.scss";
 @import "./mixins/menu-block.scss";
+@import "./mixins/hours.scss";
+@import "./mixins/speciality.scss";
 
 // Styles for pages
 
 @import "./pages/index.scss";
 @import "./pages/about-us.scss";
+@import "./pages/reservation.scss";
 @import "./pages/shop.scss";
 

@@ -1,0 +1,27 @@
+.book
+	.container
+		h2.medium-title.book__title Book a Table
+		.book__text Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+		form(method="POST" action="https://peaceful-island-78575.herokuapp.com/api").book-form
+			.book-form__input-wrapper
+				input.book-form__input(type="name" name="name" required placeholder="Name")
+				img(src="./img/home-page/icon-name.png").book-form__icon
+			.book-form__input-wrapper
+				input.book-form__input(type="email" name="email" required placeholder="Email")
+				img(src="./img/home-page/icon-envelope.png").book-form__icon
+			.book-form__input-wrapper
+				input.book-form__input#phone(type="phone" name="phone" required placeholder="Phone")
+				img(src="./img/home-page/icon-reserve-phone.png").book-form__icon
+			.book-form__input-wrapper
+				input.book-form__input(type="date" name="date" required placeholder="Date")
+				img(src="./img/home-page/icon-calander.png").book-form__icon
+			.book-form__input-wrapper
+				input.book-form__input(type="time" name="time" required placeholder="Time")
+				img(src="./img/home-page/icon-time.png").book-form__icon
+			.book-form__input-wrapper
+				input.book-form__input(type="text" name="guests" required placeholder="Guests")
+				img(src="./img/home-page/icon-guest.png").book-form__icon
+			.book-form__textarea-wrapper
+				textarea.book-form__textarea(placeholder="Special Requirements" required type="text" name="textbox")
+				img(src="./img/home-page/icon-comment.png").book-form__icon.book-form__textarea-icon
+			button(type="submit").book-form__submit Make Reservation

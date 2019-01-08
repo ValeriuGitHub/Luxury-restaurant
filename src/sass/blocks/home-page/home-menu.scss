@@ -1,0 +1,32 @@
+.home-menu {
+	position: relative;
+	&__img {
+		&-left {
+			position: absolute;
+			top: 10px;
+			left: 1px;
+			display: block;
+			background-size: contain;
+			width: 267px;
+			height: 414px;
+			@include desktops {
+				display: none;
+			}
+		}
+		&-right {
+			position: absolute;
+			bottom: -79px;
+			right: 31px;
+			height: 241px;
+			width: 241px;
+			background-size: contain;
+			z-index: 10;
+			@include laptops {
+				bottom: -120px;
+			}
+			@include tablets {
+				display: none;
+			}
+		}
+	}
+}
