@@ -1,0 +1,39 @@
+.description {
+	&-wrapper {
+		padding: 88px 0px 84px;
+		background-color: #edf1f3;
+	}
+	&__list {
+		@extend %list;
+	}
+	&__item {
+		color: $black;
+		margin-bottom: 14px;
+		letter-spacing: 0.125px;
+		font-weight: bold;
+	}
+	&__titles {
+		font-size: 24px;
+		font-family: "Playfair Display";
+		display: flex;
+		margin-bottom: 33px;
+	}
+	&__title {
+		&-main {
+			margin-right: 43px;
+			color: #fe4c8d;
+			font-size: 24px;
+		}
+		&_black {
+			color: $black;
+			font-size: 24px;
+		}
+	}
+	&__text {
+		font-weight: normal;
+		line-height: 1.857;
+		margin-bottom: 33px;
+		width: 92%;
+	}
+}
+
