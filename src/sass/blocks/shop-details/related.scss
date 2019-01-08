@@ -1,6 +1,12 @@
 .related {
 	padding: 83px 0px 55px;
+	@include laptops {
+		padding: 65px 0px 35px;
+	}
 	&__title {
 		margin-bottom: 24px;
+		@include laptops {
+			text-align: center;
+		}
 	}
 }

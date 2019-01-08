@@ -2,6 +2,9 @@
 	&-wrapper {
 		padding: 88px 0px 84px;
 		background-color: #edf1f3;
+		@include laptops {
+			padding: 70px 0px;
+		}
 	}
 	&__list {
 		@extend %list;

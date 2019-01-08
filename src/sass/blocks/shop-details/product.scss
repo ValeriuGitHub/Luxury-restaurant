@@ -10,12 +10,17 @@
 		justify-content: center;
 		align-items: center;
 		padding: 27px 0px;
+		@include laptops {
+			margin-right: 15px;
+			width: calc(50% - 7.5px);
+			padding: 40px;
+			text-align: center;
+		}
 		&__img {
 			display: block;
 		}
 		&__zoom {
 			position: absolute;
-			display: block;
 			right: 23px;
 			bottom: 20px;
 			font-size: 22px;
@@ -25,12 +30,20 @@
 			&:hover, &:focus {
 				color: $orange;
 			}
+			@include laptops {
+				right: 10px;
+				position: absolute;
+				bottom: 10px;
+			}
 		}
 	}
 	&-right {
 		width: calc(50% - 15px);
 		float: left;
 		padding: 14px 19px;
+		@include laptops {
+			padding: 25px 0px 25px 19px;
+		}
 		&__title {
 			margin-bottom: 9px;
 		}
@@ -74,10 +87,19 @@
 			line-height: 1.857;
 			margin-bottom: 55px;
 			font-weight: normal;
+			@include desktops {
+				width: 86%;
+			}
+			@include laptops {
+				width: 100%;
+			}
 		}
 	}
 	&-wrapper {
 		padding: 100px 0px;
+		@include laptops {
+			padding: 80px 0px;
+		}
 	}
 	&-form {
 		display: flex;

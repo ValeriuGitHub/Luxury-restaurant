@@ -27,6 +27,10 @@
 		&__img {
 			display: block;
 			width: 226px;
+			// @include laptops {
+			// 	width: 155px;
+			// 	margin: 0 auto;
+			// }
 		}
 	}
 	&-bottom {
@@ -71,6 +75,8 @@
 		flex-wrap: wrap;
 		@include laptops {
 			justify-content: center;
+			// margin-right: -10px;
+			// margin-left: -10px;
 		}
 	}
 	&__item {
@@ -89,6 +95,10 @@
 			margin-left: 15px;
 			margin-bottom: 60px;
 			margin-top: 0px;
+			width: 270px;
+			// width: 200px
+			// margin-left: 10px;
+			// margin-right: 10px;
 		}
 		&:hover .product-wrap {
 			opacity: 0.9;
