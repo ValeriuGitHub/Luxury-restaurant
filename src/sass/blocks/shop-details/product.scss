@@ -169,9 +169,6 @@
 	&-form {
 		display: flex;
 		justify-content: flex-start;
-		// @include phones {
-		// 	display: block;
-		// }
 		&__icon {
 			position: absolute;
 			font-size: 14px;
@@ -186,28 +183,34 @@
 			cursor: pointer;
 			padding: 5px;
 			display: block;
+			&_active {
+				pointer-events: none;
+				color: rgba($black, 0.5);
+			}
 		}
 		&__plus-icon {
 			right: 17.5px;
 			cursor: pointer;
 			padding: 5px;
 			display: block;
+			&_active {
+				pointer-events: none;
+				color: rgba($black, 0.5);
+			}
 		}
 		&__input {
 			margin-right: 10px;
 			padding: 17px 0;
 			width: 114px;
 			border: 1px solid #e4e4e4;
+			text-align: center;
+			font-size: 18px;
+			font-family: "Sintony";
+			color: $black;
+			font-weight: bold;
 			@include phones {
 				width: 100px;
 				margin-right: 5px;
-			}
-			&::placeholder {
-				text-align: center;
-				font-size: 18px;
-				color: $black;
-				font-weight: bold;
-				font-family: "Sintony";
 			}
 			&-label {
 				position: absolute;

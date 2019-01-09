@@ -16,10 +16,9 @@
 				.products-right__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.
 				form(method="POST" action="https://peaceful-island-78575.herokuapp.com/api").products-form
 					.products-form__input-wrapper
-						input.products-form__input#product-counter(type="numbers" name="counter" readonly placeholder="01")
-						//- label(for="product-counter").product-form__input-label 01
-						i.fa.fa-minus.products-form__icon.products-form__minus-icon
-						i.fa.fa-plus.products-form__icon.products-form__plus-icon
+						input.products-form__input#product-counter(type="numbers" name="counter" value="1" readonly)
+						i.fa.fa-minus.products-form__icon.products-form__minus-icon#minus
+						i.fa.fa-plus.products-form__icon.products-form__plus-icon#plus
 					button.products-form__center-button add to cart
 					button.products-form__right-button buy now
 
