@@ -3,6 +3,12 @@
 	@include laptops {
 		padding: 65px 0px 35px;
 	}
+	@include tablets {
+		padding: 45px 0px 15px;
+	}
+	@include phones {
+		padding: 35px 0px 5px;
+	}
 	&__title {
 		margin-bottom: 24px;
 		@include laptops {
