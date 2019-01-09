@@ -23,5 +23,4 @@ function shopDetails() {
 			$(".products-form__plus-icon").removeClass("products-form__plus-icon_active");
 		}
 	});
-
 }
