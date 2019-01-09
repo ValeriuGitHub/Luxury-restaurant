@@ -1,0 +1,183 @@
+.instant {
+	padding-top: 85px;
+    padding-bottom: 110px;
+	@extend %clearfix;
+	&__title {
+		margin-bottom: 22px;
+	}
+	&-left {
+		width: calc(50% - 15px);
+		float: left;
+		margin-right: 30px;
+	}
+	&-right {
+		width: calc(50% - 15px);
+		float: left;
+		background-color: #fe4c8d;
+		padding: 10px;
+		&__inside {
+			border: 1px dashed #ffa6c6;
+		    padding: 38px 88px 89px 60px;
+		}
+		&__checkbox {
+			&-wrapper {
+				margin-bottom: 12.5px;
+			}
+		}
+		&__title {
+			font-size: 22px;
+			font-family: "Playfair Display";
+			color: #fff;
+			padding-left: 30px;
+			padding-bottom: 10px;
+		}
+		&__top {
+			font-size: 15px;
+			font-family: "Sintony";
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			padding: 0 76px 4px 31px;
+			border-bottom: 1px solid #ffa6c6;
+			&-title {
+				font-size: 15px;
+				font-weight: bold;
+				text-transform: uppercase;
+			}
+		}
+		&__payment {
+			padding: 15px 7px 0 29px;
+			&-label {
+				letter-spacing: 0.1px;
+			}
+		}
+		&__list {
+			@extend %list;
+			padding-bottom: 20px;
+			border-bottom: 1px solid #ffa6c6;
+			padding-top: 12px;
+		}
+		&__item {
+			display: flex;
+			justify-content: space-between;
+			color: #ffd4e4;
+			font-size: 15px;
+			padding: 0 76px 0px 31px;
+			margin-bottom: 9px;
+		}
+		&__total {
+			margin-bottom: 52px;
+			padding: 11px 67px 0px 31px;
+			color: #fff;
+			text-transform: uppercase;
+			display: flex;
+			justify-content: space-between;
+			font-size: 15px;
+		}
+		&__card {
+			&-list {
+				@extend %list;
+				display: flex;
+				justify-content: center;
+			}
+			&-item {
+				margin-right: 8px;
+				&:last-child {
+					margin-right: 0px;
+				}
+			}
+		}
+	}
+	&-form {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0px 0px 0px;
+		@include laptops {
+			justify-content: center;
+		}
+		@include laptops {
+			padding-top: 35px;
+		}
+		@include tablets {
+			padding-top: 25px;
+		}
+		@include phones {
+			padding-top: 18px;
+		}
+		&__submit {
+
+		}
+		&__textarea {
+			min-height: 172px;
+			width: 100%;
+			border: 0;
+			border-bottom: 1px solid #c7d1d6;
+			margin-bottom: 20.5px;
+			padding: 10px 20px 0 0;
+			resize: none;
+			&::placeholder {
+				color: #363d43;
+				font-weight: normal;
+				font-family: "Sintony";
+			}
+			&:hover, &:focus {
+				border-color: transparent;
+				border-bottom-color: #000;
+				color: #000;
+			}
+			@include phones {
+				min-height: 100px;
+			}
+		}
+		&__payment {
+			&-label {
+				color: #fff;
+				text-transform: uppercase;
+			}
+		}
+		&__checkbox {
+			background-color: transparent;
+			&-label {
+				color: #363d43;
+				letter-spacing: -0.1px;
+			}
+		}
+		&__input {
+			padding-bottom: 14.5px;
+			padding-top: 14px;
+			width: 100%;
+			border: none;
+			background-color: transparent;
+			height: 42px;
+			border-bottom: 1px solid #c7d1d6;
+			padding-left: 0px;
+			margin-bottom: 30px;
+			font-family: "Sintony";
+			margin-bottom: 18px;
+			&::placeholder {
+				color: #363d43;
+				font-weight: normal;
+				letter-spacing: 0.5px;
+			}
+			&:hover, &:focus {
+				border-color: transparent;
+				border-bottom-color: #000;
+				color: #000;
+			}
+			&-wrapper {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 12.5px;
+				width: 100%;
+			}
+		}
+		&__submit {
+			padding: 17px 50px;
+			@include tablets {
+				margin: 0 auto;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}

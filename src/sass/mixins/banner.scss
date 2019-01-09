@@ -80,3 +80,12 @@
 	}
 }
 
+.checkout {
+	&-banner {
+		&__background {
+			background: url("./img/banner/checkout-background.jpg");
+			background-size: cover;
+		}
+	}
+}
+

@@ -113,3 +113,44 @@ textarea {
 	resize: none;
 }
 
+input[type=checkbox], input[type=radio] {display: none;}
+input[type=checkbox] + label:before {
+	content: "\2713";
+	color: transparent;
+	display: inline-block;
+	border: 1px solid #c7d1d6;
+	font-size: 20px;
+	margin: -5px 10px 0 0;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	vertical-align: middle;
+	transition: color ease .3s;
+}
+
+input[type=checkbox]:checked + label:before {
+	color: $orange;
+}
+
+input[type=radio] + label:before {
+	content: "\2713";
+	border: 1px solid #fff;
+	background-color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	margin: -5px 18px 0 0;
+	height: 24px;
+	width: 24px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 0;
+	transition: font-size ease .3s;
+}
+input[type=radio]:checked + label:before {
+	line-height: 22px;
+	font-size: 14px;
+	color: #fe4c8d;
+}
+
+
+

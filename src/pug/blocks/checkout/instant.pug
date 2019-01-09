@@ -1,0 +1,61 @@
+.instant
+	.container
+		h2.medium-title.instant__title Instant Checkout
+		.instant-left
+			form(method="POST" action="https://peaceful-island-78575.herokuapp.com/api").instant-form
+				input.instant-form__input(type="name" name="name" required placeholder="First name")
+				input.instant-form__input(type="name" name="name" required placeholder="Last name")
+				input.instant-form__input(type="email" name="email" required placeholder="Email address")
+				input.instant-form__input#phone(type="phone" name="phone" required placeholder="Phone")
+				input(list="country" name="country" placeholder="Country").instant-form__input
+				datalist#country.instant-form__datalist
+					option(value="Afghanistan").instant-form__option
+					option(value="Albania").instant-form__option
+					option(value="Algeria").instant-form__option
+					option(value="American Samoa").instant-form__option
+					option(value="Andorra").instant-form__option
+				textarea.instant-form__textarea(placeholder="Delivery address" required type="text" name="textbox")
+				input(type="text" placeholder="Postcode / Zip" title="Please enter a Zip Code" pattern="^\s*?\d{5}(?:[-\s]\d{4})?\s*?$").instant-form__input
+				.instant-form__input-wrapper
+					input(type="checkbox" id="horns" name="horns").instant-form__checkbox
+					label(for="horns").instant-form__checkbox-label Billing and Shipping address are same
+					button(type="submit").instant-form__submit Place order
+		.instant-right
+			.instant-right__inside
+				h3.instant-right__title Your Order
+				.instant-right__top
+					h4.instant-right__top-title Product
+					h4.instant-right__top-title Total
+				ul.instant-right__list
+					li.instant-right__item
+						.instant-right__product Product name one
+						.instant-right__price : $100
+					li.instant-right__item
+						.instant-right__product Product name two
+						.instant-right__price : $100
+					li.instant-right__item
+						.instant-right__product Product name three
+						.instant-right__price : $100
+					li.instant-right__item
+						.instant-right__product Tax
+						.instant-right__price : $100
+				.instant-right__total
+					.instant-right__total-title order total
+					.instant-right__total-price : $ 310
+				h3.instant-right__title Payment Method
+				.instant-right__payment
+					.instant-right__checkbox-wrapper
+						input(type="radio" id="radio1" name="radio").instant-right__payment-checkbox
+						label(for="radio1").instant-form__payment-label Cash on Delivery
+					.instant-right__checkbox-wrapper
+						input(type="radio" id="radio2" name="radio").instant-right__payment-checkbox
+						label(for="radio2").instant-form__payment-label Credit card
+					ul.instant-right__card-list
+						li.instant-right__card-item
+							img(src="./img/checkout/icon-cirrus.png").instant-right__card-img
+						li.instant-right__card-item
+							img(src="./img/checkout/icon-discover.png").instant-right__card-img
+						li.instant-right__card-item
+							img(src="./img/checkout/icon-maestro.png").instant-right__card-img
+						li.instant-right__card-item
+							img(src="./img/checkout/icon-visa.png").instant-right__card-img
