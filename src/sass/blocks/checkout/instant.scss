@@ -1,6 +1,18 @@
 .instant {
 	padding-top: 85px;
-    padding-bottom: 100px;
+	padding-bottom: 100px;
+	@include laptops {
+		padding-top: 65px;
+		padding-bottom: 75px;
+	}
+	@include tablets {
+		padding-top: 45px;
+		padding-bottom: 50px;
+	}
+	@include phones {
+		padding-top: 25px;
+		padding-bottom: 30px;
+	}
 	@extend %clearfix;
 	&__title {
 		margin-bottom: 22px;
@@ -9,15 +21,36 @@
 		width: calc(50% - 15px);
 		float: left;
 		margin-right: 30px;
+		@include tablets {
+			width: 100%;
+			float: none;
+		}
 	}
 	&-right {
 		width: calc(50% - 15px);
 		float: left;
 		background-color: #fe4c8d;
 		padding: 10px;
+		@include tablets {
+			float: none;
+			width: 100%;
+			margin-top: 30px;
+		}
+		@include phones {
+			padding: 5px;
+		}
 		&__inside {
 			border: 1px dashed #ffa6c6;
-		    padding: 38px 88px 89px 60px;
+			padding: 38px 88px 89px 60px;
+			@include laptops {
+				padding: 50px 0px 50px 0px;
+			}
+			@include tablets {
+				padding: 40px 0px;
+			}
+			@include phones {
+				padding: 30px 0px;
+			}
 		}
 		&__checkbox {
 			&-wrapper {
@@ -30,6 +63,16 @@
 			color: #fff;
 			padding-left: 30px;
 			padding-bottom: 10px;
+			@include laptops {
+				font-size: 21px;
+			}
+			@include tablets {
+				font-size: 19px;
+			}
+			@include phones {
+				font-size: 18px;
+				padding-left: 31px;
+			}
 		}
 		&__top {
 			font-size: 15px;
@@ -39,14 +82,29 @@
 			justify-content: space-between;
 			padding: 0 76px 4px 31px;
 			border-bottom: 1px solid #ffa6c6;
+			@include phones {
+				padding: 0 31px 4px 31px;
+			}
 			&-title {
 				font-size: 15px;
 				font-weight: bold;
 				text-transform: uppercase;
+				@include laptops {
+					font-size: 14px;
+				}
+				@include tablets {
+					font-size: 13px;
+				}
+				@include phones {
+					font-size: 12.5px;
+				}
 			}
 		}
 		&__payment {
 			padding: 15px 7px 0 29px;
+			@include phones {
+				padding: 15px 7px 0 10px;
+			}
 			&-label {
 				letter-spacing: 0.1px;
 			}
@@ -64,6 +122,16 @@
 			font-size: 15px;
 			padding: 0 76px 0px 31px;
 			margin-bottom: 9px;
+			@include laptops {
+				font-size: 14px;
+			}
+			@include tablets {
+				font-size: 13px;
+			}
+			@include phones {
+				font-size: 12.5px;
+    			padding: 0 31px 4px 31px;
+			}
 		}
 		&__total {
 			margin-bottom: 52px;
@@ -73,15 +141,31 @@
 			display: flex;
 			justify-content: space-between;
 			font-size: 15px;
+			@include laptops {
+				font-size: 14px;
+			}
+			@include tablets {
+				font-size: 13px;
+			}
+			@include phones {
+				font-size: 12.5px;
+    			padding: 11px 31px 0px 31px;
+			}
 		}
 		&__card {
 			&-list {
 				@extend %list;
 				display: flex;
 				justify-content: center;
+				@include phones {
+					justify-content: flex-start;
+				}
 			}
 			&-item {
 				margin-right: 8px;
+				@include phones {
+					margin-right: 7px;
+				}
 				&:last-child {
 					margin-right: 0px;
 				}
@@ -94,15 +178,6 @@
 		padding: 0px 0px 0px;
 		@include laptops {
 			justify-content: center;
-		}
-		@include laptops {
-			padding-top: 35px;
-		}
-		@include tablets {
-			padding-top: 25px;
-		}
-		@include phones {
-			padding-top: 18px;
 		}
 		&__submit {
 
@@ -119,6 +194,12 @@
 				color: #363d43;
 				font-weight: normal;
 				font-family: "Sintony";
+				@include tablets {
+					font-size: 13px;
+				}
+				@include phones {
+					font-size: 12px;
+				}
 			}
 			&:hover, &:focus {
 				border-color: transparent;
@@ -133,6 +214,15 @@
 			&-label {
 				color: #fff;
 				text-transform: uppercase;
+				@include laptops {
+					font-size: 14px;
+				}
+				@include tablets {
+					font-size: 13px;
+				}
+				@include phones {
+					font-size: 12.5px;
+				}
 			}
 		}
 		&__checkbox {
@@ -140,6 +230,9 @@
 			&-label {
 				color: #363d43;
 				letter-spacing: -0.1px;
+				@include phones {
+					font-size: 13px;
+				}
 			}
 		}
 		&__input {
@@ -158,6 +251,12 @@
 				color: #363d43;
 				font-weight: normal;
 				letter-spacing: 0.5px;
+				@include tablets {
+					font-size: 13px;
+				}
+				@include phones {
+					font-size: 12px;
+				}
 			}
 			&:hover, &:focus {
 				border-color: transparent;
@@ -170,13 +269,15 @@
 				align-items: center;
 				margin-top: 12.5px;
 				width: 100%;
+				@include laptops {
+					display: block;
+				}
 			}
 		}
 		&__submit {
 			padding: 17px 50px;
-			@include tablets {
-				margin: 0 auto;
-				margin-bottom: 30px;
+			@include laptops {
+				margin: 20px auto 0px;
 			}
 		}
 	}

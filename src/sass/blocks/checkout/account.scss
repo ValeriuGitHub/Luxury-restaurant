@@ -3,6 +3,18 @@
 		background-color: #edf1f3;
 		padding-top: 85px;
 		padding-bottom: 96px;
+		@include laptops {
+			padding-top: 61px;
+			padding-bottom: 75px;
+		}
+		@include tablets {
+			padding-top: 40px;
+			padding-bottom: 55px;
+		}
+		@include phones {
+			padding-top: 25px;
+			padding-bottom: 30px;
+		}
 	}
 	&__title {
 		text-align: center;
@@ -14,16 +26,45 @@
 		text-align: center;
 		width: 43%;
 		margin: 0 auto 35px;
+		@include laptops {
+			width: 60%;
+		}
+		@include tablets {
+			font-size: 13px;
+			width: 65%;
+		}
+		@include phones {
+			width: 100%;
+			font-size: 12px;
+		}
+	}
+	&__submit {
+		@include phones {
+			margin: 0 auto;
+		}
 	}
 	&-form {
 		display: flex;
 		justify-content: center;
+		@include phones {
+			display: block;
+		}
 		&__input {
 			border: 1px solid #dde4e8;
 			border-radius: 5px;
 			width: 438px;
 			margin-right: 6px;
 			padding-left: 25px;
+			@include tablets {
+				width: 275px;
+			}
+			@include phones {
+				padding-top: 13px;
+				padding-bottom: 13px;
+				margin-bottom: 15px;
+				margin-right: 0px;
+				width: 100%;
+			}
 			&::placeholder {
 				font-family: "Sintony";
 				color: #51575c;
