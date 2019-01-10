@@ -18,35 +18,97 @@
 		margin-bottom: 22px;
 	}
 	&-table {
-		@extend %list;
-		border-bottom: 1px solid #ffa6c6;
-		padding: 10px 38px 25px 26px;
-		width: 100%;
-		@include tablets {
-			padding-right: 68px;
-		}
-		@include phones {
-			padding-right: 31px;
-		}
-		&__vertical {
-			color: #ffd4e4;
+		color: #fff;
+		&__header {
 			font-size: 15px;
+			font-family: "Sintony";
+			color: #fff;
+			display: inline-table;
+		    padding: 0px 75px 4px 26px;
+			border-bottom: 1px solid #ffa6c6;
+			width: 100%;
+			@include laptops {
+				padding-right: 30px;
+			}
+			@include phones {
+				padding: 0 31px 4px 25px;
+			}
+			&-cell {
+				font-size: 15px;
+				font-weight: bold;
+				text-transform: uppercase;
+				@include laptops {
+					font-size: 14px;
+				}
+				@include tablets {
+					font-size: 13px;
+				}
+				@include phones {
+					font-size: 12.5px;
+				}
+				&_right {
+					text-align: right;
+				}
+			}
+		}
+		&__body {
+			@extend %list;
+			border-bottom: 1px solid #ffa6c6;
+		    padding: 6px 72px 25px 24px;
+			display: inline-table;
+			width: 100%;
+			@include laptops {
+				padding-right: 30px;
+			}
+			@include tablets {
+				padding-right: 30px;
+			}
+			@include phones {
+				padding-right: 31px;
+			}
+			&-vertical {
+				color: #ffd4e4;
+				font-size: 15px;
+				@include laptops {
+					font-size: 14px;
+				}
+				@include tablets {
+					font-size: 13px;
+				}
+				@include phones {
+					font-size: 12.5px;
+					padding: 0 31px 4px 31px;
+				}
+			}
+			&-cell {
+				padding-bottom: 6px;
+				letter-spacing: 0.2px;
+				&_right {
+					text-align: right;
+				}
+			}
+		}
+		&__footer {
+			margin-bottom: 46px;
+			padding: 4px 67px 0 25px;
+			color: #fff;
+			text-transform: uppercase;
+			display: inline-table;
+			font-size: 15px;
+			width: 100%;
 			@include laptops {
 				font-size: 14px;
+				padding-right: 30px;
 			}
 			@include tablets {
 				font-size: 13px;
 			}
 			@include phones {
 				font-size: 12.5px;
-				padding: 0 31px 4px 31px;
+				padding: 11px 31px 0px 31px;
 			}
-		}
-		&__cell {
-			padding-bottom: 6px;
-			letter-spacing: 0.2px;
-			&_right {
-				@include tablets {
+			&-cell {
+				&_right {
 					text-align: right;
 				}
 			}
@@ -97,7 +159,7 @@
 			font-family: "Playfair Display";
 			color: #fff;
 			padding-left: 30px;
-			padding-bottom: 10px;
+			margin-bottom: 6px;
 			@include laptops {
 				font-size: 21px;
 			}
@@ -109,61 +171,13 @@
 				padding-left: 31px;
 			}
 		}
-		&__top {
-			font-size: 15px;
-			font-family: "Sintony";
-			color: #fff;
-			display: flex;
-			justify-content: space-between;
-			padding: 0 76px 4px 31px;
-			border-bottom: 1px solid #ffa6c6;
-			@include laptops {
-				padding-right: 68px;
-			}
-			@include phones {
-				padding: 0 31px 4px 31px;
-			}
-			&-title {
-				font-size: 15px;
-				font-weight: bold;
-				text-transform: uppercase;
-				@include laptops {
-					font-size: 14px;
-				}
-				@include tablets {
-					font-size: 13px;
-				}
-				@include phones {
-					font-size: 12.5px;
-				}
-			}
-		}
 		&__payment {
-			padding: 15px 7px 0 29px;
+			padding: 19px 7px 0 29px;
 			@include phones {
 				padding: 15px 7px 0 10px;
 			}
 			&-label {
 				letter-spacing: 0.1px;
-			}
-		}
-		&__total {
-			margin-bottom: 52px;
-			padding: 11px 67px 0px 31px;
-			color: #fff;
-			text-transform: uppercase;
-			display: flex;
-			justify-content: space-between;
-			font-size: 15px;
-			@include laptops {
-				font-size: 14px;
-			}
-			@include tablets {
-				font-size: 13px;
-			}
-			@include phones {
-				font-size: 12.5px;
-    			padding: 11px 31px 0px 31px;
 			}
 		}
 		&__card {

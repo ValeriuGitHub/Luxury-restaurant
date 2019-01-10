@@ -24,25 +24,28 @@
 			.instant-right
 				.instant-right__inside
 					h3.instant-right__title Your Order
-					.instant-right__top
-						h4.instant-right__top-title Product
-						h4.instant-right__top-title Total
 					table.instant-table
-						tr.instant-table__vertical
-							td.instant-table__cell Product name one
-							td.instant-table__cell.instant-table__cell_right : $100
-						tr.instant-table__vertical
-							td.instant-table__cell Product name two
-							td.instant-table__cell.instant-table__cell_right : $100
-						tr.instant-table__vertical
-							td.instant-table__cell Product name three
-							td.instant-table__cell.instant-table__cell_right : $100
-						tr.instant-table__vertical
-							td.instant-table__cell Tax
-							td.instant-table__cell.instant-table__cell_right : $100
-					.instant-right__total
-						.instant-right__total-title order total
-						.instant-right__total-price : $ 310
+						thead.instant-table__header
+							tr.instant-table__header-vertical
+								td.instant-table__header-cell Product
+								td.instant-table__header-cell.instant-table__header-cell_right Total
+						tbody.instant-table__body
+							tr.instant-table__body-vertical
+								td.instant-table__body-cell Product name one
+								td.instant-table__body-cell.instant-table__body-cell_right : $100
+							tr.instant-table__body-vertical
+								td.instant-table__body-cell Product name two
+								td.instant-table__body-cell.instant-table__body-cell_right : $100
+							tr.instant-table__body-vertical
+								td.instant-table__body-cell Product name three
+								td.instant-table__body-cell.instant-table__body-cell_right : $100
+							tr.instant-table__body-vertical
+								td.instant-table__body-cell Tax
+								td.instant-table__body-cell.instant-table__body-cell_right : $100
+						tfoot.instant-table__footer
+							tr.instant-table__footer-vertical
+								td.instant-table__footer-cell order total
+								td.instant-table__footer-cell.instant-table__footer-cell_right : $ 310
 					h3.instant-right__title Payment Method
 					.instant-right__payment
 						.instant-right__checkbox-wrapper
