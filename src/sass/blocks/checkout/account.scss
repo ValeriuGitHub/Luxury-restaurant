@@ -2,7 +2,7 @@
 	&-wrapper {
 		background-color: #edf1f3;
 		padding-top: 85px;
-		padding-bottom: 80px;
+		padding-bottom: 96px;
 	}
 	&__title {
 		text-align: center;
@@ -22,13 +22,15 @@
 			border: 1px solid #dde4e8;
 			border-radius: 5px;
 			width: 438px;
-			margin-right: 8px;
-			padding-left: 28px;
+			margin-right: 6px;
+			padding-left: 25px;
 			&::placeholder {
+				font-family: "Sintony";
+				color: #51575c;
 				letter-spacing: 0.5px;
 			}
 			&:hover, &:focus {
-				border-color: #000;
+				border-color: $black;
 			}
 		}
 	}
