@@ -5,7 +5,7 @@
 			form(method="POST" action="https://peaceful-island-78575.herokuapp.com/api").instant-form
 				input.instant-form__input(type="name" name="name" required placeholder="First name")
 				input.instant-form__input(type="name" name="name" required placeholder="Last name")
-				input.instant-form__input(type="email" name="email" required placeholder="Email address" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$")
+				input.instant-form__input(type="email" name="email" required placeholder="Email address" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$")
 				input.instant-form__input#phone(type="phone" name="phone" required placeholder="Phone")
 				input(list="country" name="country" placeholder="Country" required).instant-form__input
 				datalist#country.instant-form__datalist
@@ -15,7 +15,7 @@
 					option(value="American Samoa").instant-form__option
 					option(value="Andorra").instant-form__option
 				textarea.instant-form__textarea(placeholder="Delivery address" required type="text" name="textbox")
-				input(type="text" name="zip-code" placeholder="Postcode / Zip" required title="Please enter a Zip Code" pattern="(\d{5}([\-]\d{4})?)").instant-form__input
+				input(type="text" name="zip-code" placeholder="Postcode / Zip" required title="Please enter a Zip Code" pattern="(\\d{5}([\\-]\\d{4})?)").instant-form__input
 				.instant-form__input-wrapper
 					input(type="checkbox" id="agree" name="agree").instant-form__checkbox
 					label(for="agree").instant-form__checkbox-label Billing and Shipping address are same
