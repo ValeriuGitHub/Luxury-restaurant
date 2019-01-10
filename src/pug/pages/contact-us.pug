@@ -1,0 +1,8 @@
+extends ../templates/common.pug
+include ../mixins/banner.pug
+block variables
+	- var title = "contact-us";
+block inner
+	+banner("Contact Us", "contact")
+	include ../blocks/contact-us/map.pug
+	include ../blocks/contact-us/under-map.pug
