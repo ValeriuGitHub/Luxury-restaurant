@@ -62,19 +62,19 @@
 	}
 }
 
-.details {
+.reservation {
 	&-banner {
 		&__background {
-			background: url("./img/banner/shop-details-background.jpg");
+			background: url("./img/banner/reservation-background.jpg");
 			background-size: cover;
 		}
 	}
 }
 
-.reservation {
+.details {
 	&-banner {
 		&__background {
-			background: url("./img/banner/reservation-background.jpg");
+			background: url("./img/banner/details-background.jpg");
 			background-size: cover;
 		}
 	}
