@@ -27,6 +27,13 @@
 		&__img {
 			display: block;
 			width: 226px;
+			@include laptops {
+				width: 155px;
+				margin: 0 auto;
+			}
+			@include phones {
+				width: 226px;
+			}
 		}
 	}
 	&-bottom {
@@ -89,6 +96,10 @@
 			margin-left: 15px;
 			margin-bottom: 60px;
 			margin-top: 0px;
+			width: 200px;
+		}
+		@include phones {
+			width: 270px;
 		}
 		&:hover .product-wrap {
 			opacity: 0.9;

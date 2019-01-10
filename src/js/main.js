@@ -37,3 +37,4 @@ $(function(){
 homePage();
 aboutUs();
 shop();
+shopDetails();
