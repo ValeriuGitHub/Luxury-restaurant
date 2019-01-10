@@ -38,16 +38,16 @@
 			font-size: 12px;
 		}
 	}
-	&__submit {
-		@include phones {
-			margin: 0 auto;
-		}
-	}
 	&-form {
 		display: flex;
 		justify-content: center;
 		@include phones {
 			display: block;
+		}
+		&__submit {
+			@include phones {
+				margin: 0 auto;
+			}
 		}
 		&__input {
 			border: 1px solid #dde4e8;

@@ -28,11 +28,20 @@
 			margin: 0px;
 			display: flex;
 			justify-content: center;
+			flex-wrap: wrap;
 			margin-bottom: 25px;
 		}
 		&__list {
 			@extend %list;
 			display: flex;
+			flex-wrap: wrap;
+			@include laptops {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+			@include phones {
+				width: 300px;
+			}
 		}
 		&__link {
 			padding: 10px 0px;
@@ -42,12 +51,12 @@
 			text-transform: uppercase;
 			margin: 0px 16.25px;
 			@include tablets {
-				font-size: 12px;
-				margin: 0px 10px;
+				font-size: 13.5px;
+				margin: 0px 8px 10px;
 			}
 			@include phones {
-				font-size: 10px;
-				margin: 0 3.5px;
+			    font-size: 13px;
+				margin: 0 5px 5px;
 			}
 		}
 	}

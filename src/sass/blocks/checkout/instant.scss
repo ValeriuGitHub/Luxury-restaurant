@@ -17,6 +17,41 @@
 	&__title {
 		margin-bottom: 22px;
 	}
+	&-table {
+		@extend %list;
+		border-bottom: 1px solid #ffa6c6;
+		padding: 10px 38px 25px 26px;
+		width: 100%;
+		@include tablets {
+			padding-right: 68px;
+		}
+		@include phones {
+			padding-right: 31px;
+		}
+		&__vertical {
+			color: #ffd4e4;
+			font-size: 15px;
+			@include laptops {
+				font-size: 14px;
+			}
+			@include tablets {
+				font-size: 13px;
+			}
+			@include phones {
+				font-size: 12.5px;
+				padding: 0 31px 4px 31px;
+			}
+		}
+		&__cell {
+			padding-bottom: 6px;
+			letter-spacing: 0.2px;
+			&_right {
+				@include tablets {
+					text-align: right;
+				}
+			}
+		}
+	}
 	&-left {
 		width: calc(50% - 15px);
 		float: left;
@@ -82,6 +117,9 @@
 			justify-content: space-between;
 			padding: 0 76px 4px 31px;
 			border-bottom: 1px solid #ffa6c6;
+			@include laptops {
+				padding-right: 68px;
+			}
 			@include phones {
 				padding: 0 31px 4px 31px;
 			}
@@ -109,30 +147,6 @@
 				letter-spacing: 0.1px;
 			}
 		}
-		&__list {
-			@extend %list;
-			padding-bottom: 20px;
-			border-bottom: 1px solid #ffa6c6;
-			padding-top: 12px;
-		}
-		&__item {
-			display: flex;
-			justify-content: space-between;
-			color: #ffd4e4;
-			font-size: 15px;
-			padding: 0 76px 0px 31px;
-			margin-bottom: 9px;
-			@include laptops {
-				font-size: 14px;
-			}
-			@include tablets {
-				font-size: 13px;
-			}
-			@include phones {
-				font-size: 12.5px;
-    			padding: 0 31px 4px 31px;
-			}
-		}
 		&__total {
 			margin-bottom: 52px;
 			padding: 11px 67px 0px 31px;
@@ -157,17 +171,19 @@
 				@extend %list;
 				display: flex;
 				justify-content: center;
-				@include phones {
-					justify-content: flex-start;
-				}
+				flex-wrap: wrap;
 			}
 			&-item {
 				margin-right: 8px;
 				@include phones {
-					margin-right: 7px;
+					margin-right: 10px;
+					margin-bottom: 5px;
 				}
 				&:last-child {
 					margin-right: 0px;
+					@include phones {
+						margin-right: 10px;
+					}
 				}
 			}
 		}
