@@ -1,0 +1,9 @@
+extends ../templates/common.pug
+include ../mixins/banner.pug
+include ../mixins/hours.pug
+block variables
+	- var title = "gallery";
+block inner
+	+banner("Gallery", "gallery")
+	include ../blocks/gallery/gallery.pug
+	+hours("gallery")
