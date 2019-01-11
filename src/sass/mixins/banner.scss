@@ -89,3 +89,12 @@
 	}
 }
 
+.contact {
+	&-banner {
+		&__background {
+			background: url("./img/banner/contact-background.jpg");
+			background-size: cover;
+		}
+	}
+}
+

@@ -1,0 +1,43 @@
+.under-map
+	.container.container_clearfix
+		.touch
+			h2.medium-title.touch__title Get in touch
+			form(method="POST" action="https://peaceful-island-78575.herokuapp.com/api").touch-form
+				.touch-form__input-wrapper
+					input.touch-form__input(type="text" name="name" required placeholder="Name")
+					img(src="./img/home-page/icon-name.png").touch-form__icon
+				.touch-form__input-wrapper
+					input.touch-form__input(type="email" name="email" required placeholder="Email" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$")
+					img(src="./img/home-page/icon-envelope.png").touch-form__icon
+				.touch-form__textarea-wrapper
+					textarea.touch-form__textarea(type="text" name="text" required placeholder="Message")
+					img(src="./img/home-page/icon-reviews.png").touch-form__icon
+				button(type="submit").touch-form__submit Send now
+		.address
+			h2.medium-title.medium-title_white.address__title Our Address
+			ul.address__list
+				li.address__item
+					h3.address__under-title Address
+					.address__text Luxury Restaunrant
+					.address__text California Second Street
+					.address__text 2nd floor
+				li.address__item
+					a(href="tel:+380634567890" target="_blank").address__link
+						h3.address__under-title Phone
+						.address__text +91 8559 5585 6559
+				li.address__item
+					a(href="mailto:example@gmail.com" target="_blank").address__link
+						h3.address__under-title Email
+						.address__text info@luxuryrestaurent.com 
+				li.address__item
+					h3.address__under-title Follow us
+					ul.address-social__list
+						li.address-social__item
+							a(href="https://www.facebook.com/").address-social__link.address-social__link_facebook
+								i.fa.fa-facebook.address-social__icon
+						li.address-social__item
+							a(href="https://twitter.com/?lang=ru").address-social__link.address-social__link_twitter
+								i.fa.fa-twitter.address-social__icon
+						li.address-social__item
+							a(href="https://plus.google.com/discover").address-social__link.address-social__link_google-plus
+								i.fa.fa-google-plus.address-social__icon
