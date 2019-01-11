@@ -1,0 +1,26 @@
+.related {
+	padding: 83px 0px 55px;
+	@include laptops {
+		padding: 65px 0px 35px;
+	}
+	@include tablets {
+		padding: 45px 0px 15px;
+	}
+	@include phones {
+		padding: 35px 0px 5px;
+	}
+	&__title {
+		margin-bottom: 24px;
+		@include laptops {
+			text-align: center;
+		}
+	}
+	&__list {
+		@extend %list;
+		display: flex;
+		flex-wrap: wrap;
+		@include laptops {
+			justify-content: center;
+		}
+	}
+}

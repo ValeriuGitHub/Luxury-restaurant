@@ -37,6 +37,7 @@ $(function(){
 homePage();
 aboutUs();
 shop();
+shopDetails();
 
 // Google Map
 
