@@ -1,0 +1,48 @@
+.gallery {
+	&-wrapper {
+		position: relative;
+		padding-top: 88px;
+		padding-bottom: 100px;
+		&__img {
+			position: absolute;
+			left: 43px;
+			top: 69px;
+		}
+	}
+	&__title {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	&__list {
+		display: flex;
+		justify-content: center;
+		@extend %list;
+	}
+	&__item {
+		margin: 0px 11px;
+		border-right: 1px solid #b7c1c6;
+		&:last-child {
+			margin-right: 0px;
+			border-right: 0px;
+			> .gallery__link {
+				padding-right: 0px;
+			}
+		}
+	}
+	&__icon {
+		margin-bottom: 10px;
+	}
+	&__link {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-right: 24px;
+	}
+	&__text {
+		font-size: 18px;
+		font-family: "Playfair Display";
+		color: $black;
+	}
+}
+
