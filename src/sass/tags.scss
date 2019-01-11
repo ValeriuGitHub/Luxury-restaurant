@@ -48,11 +48,47 @@ a {
 }
 
 input {
-	transition: 0.7s;
+	transition: 0.3s;
+	padding-bottom: 14.5px;
+	padding-top: 14px;
+	width: 100%;
+	border: none;
+	background-color: transparent;
+	border-bottom: 1px solid #c7d1d6;
+	&::placeholder {
+		color: #363d43;
+		font-weight: normal;
+		letter-spacing: 0.5px;
+	}
+	&:hover, &:focus {
+		border-color: transparent;
+		border-bottom-color: #000;
+		color: #000;
+	}
 }
 
 textarea {
-	transition: 0.7s;
+	transition: 0.3s;
+	min-height: 126px;
+	width: 100%;
+	border: 0;
+	border-bottom: 1px solid #c7d1d6;
+	padding: 6px 20px 0px 40px;
+	resize: none;
+	&::placeholder {
+		color: #363d43;
+		font-weight: normal;
+		letter-spacing: 0.5px;
+		font-family: "Sintony";
+	}
+	&:hover, &:focus {
+		border-color: transparent;
+		border-bottom-color: #000;
+		color: #000;
+	}
+	@include phones {
+		min-height: 100px;
+	}
 }
 
 ul {

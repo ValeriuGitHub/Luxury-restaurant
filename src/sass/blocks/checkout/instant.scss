@@ -41,7 +41,7 @@
 			}
 			&-left {
 				padding-left: 27px;
-				padding-bottom: 6px;
+				padding-bottom: 9px;
 				text-align: left;
 			}
 			&-right {
@@ -221,9 +221,6 @@
 		padding: 0px 0px 0px;
 		@include laptops {
 			justify-content: center;
-		}
-		&__submit {
-
 		}
 		&__textarea {
 			min-height: 172px;
