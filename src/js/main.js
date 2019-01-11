@@ -38,3 +38,11 @@ homePage();
 aboutUs();
 shop();
 shopDetails();
+
+// Google Map
+
+$(function() {
+	if($('#map').length > 0) {
+		initMap();
+	}
+});

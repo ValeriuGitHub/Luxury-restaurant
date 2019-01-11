@@ -1,0 +1,14 @@
+.map {
+	height: 650px;
+	&_relative {
+		position: relative;
+		height: 650px;
+
+		@include tablets {
+			height: 600px;
+		}
+		@include phones {
+			height: 550px;
+		}
+	}
+}

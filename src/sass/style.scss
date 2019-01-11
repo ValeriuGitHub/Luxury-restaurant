@@ -88,6 +88,9 @@
 	&_without-padding {
 		padding: 0;
 	}
+	&_clearfix {
+		@extend %clearfix;
+	}
 }
 
 .slick-dotted.slick-slider {
