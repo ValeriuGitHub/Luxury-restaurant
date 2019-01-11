@@ -37,3 +37,11 @@ $(function(){
 homePage();
 aboutUs();
 shop();
+
+// Google Map
+
+$(function() {
+	if($('#map').length > 0) {
+		initMap();
+	}
+});
