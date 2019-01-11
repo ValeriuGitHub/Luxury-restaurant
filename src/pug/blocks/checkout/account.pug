@@ -1,0 +1,8 @@
+.account-wrapper
+	.container
+		.account
+			h2.medium-title.account__title Create an Account
+			.account__text Lorem Ipsum has been the industry's standard dummy text ever printer took a galley of type and scrambled it to make a type specimen book.
+			form(method="POST" action="https://peaceful-island-78575.herokuapp.com/api").account-form
+				input.account-form__input(type="email" name="email" required placeholder="Enter your email address")
+				button(type="submit").account-form__submit Create account

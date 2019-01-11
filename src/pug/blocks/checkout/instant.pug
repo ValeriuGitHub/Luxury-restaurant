@@ -1,0 +1,69 @@
+.instant
+	form(method="POST" action="https://peaceful-island-78575.herokuapp.com/api").instant__form
+		.container
+			h2.medium-title.instant__title Instant Checkout
+			.instant-left
+				.instant-form
+					input.instant-form__input(type="name" name="name" required placeholder="First name")
+					input.instant-form__input(type="name" name="name" required placeholder="Last name")
+					input.instant-form__input(type="email" name="email" required placeholder="Email address" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$")
+					input.instant-form__input#phone(type="phone" name="phone" required placeholder="Phone")
+					input(list="country" name="country" placeholder="Country" required).instant-form__input
+					datalist#country.instant-form__datalist
+						option(value="Afghanistan").instant-form__option
+						option(value="Albania").instant-form__option
+						option(value="Algeria").instant-form__option
+						option(value="American Samoa").instant-form__option
+						option(value="Andorra").instant-form__option
+					textarea.instant-form__textarea(placeholder="Delivery address" required type="text" name="textbox")
+					input(type="text" name="zip-code" placeholder="Postcode / Zip" required title="Please enter a Zip Code" pattern="(\\d{5}([\\-]\\d{4})?)").instant-form__input
+					.instant-form__input-wrapper
+						input(type="checkbox" id="agree" name="agree").instant-form__checkbox
+						label(for="agree").instant-form__checkbox-label Billing and Shipping address are same
+						button(type="submit").instant-form__submit Place order
+			.instant-right
+				.instant-right__inside
+					h3.instant-right__title Your Order
+					table.instant-table
+						thead.instant-table__header
+							tr.instant-table__header-vertical
+								th.instant-table__cell-left.instant-table__cell-title Product
+								th.instant-table__cell-right.instant-table__cell-title Total
+						tbody.instant-table__body
+							tr.instant-table__body-vertical
+								td.instant-table__cell-left.instant-table__cell-top Product name one
+								td.instant-table__cell-right.instant-table__cell-top  : $100
+							tr.instant-table__body-vertical
+								td.instant-table__cell-left Product name two
+								td.instant-table__cell-right : $100
+							tr.instant-table__body-vertical
+								td.instant-table__cell-left Product name three
+								td.instant-table__cell-right : $100
+							tr.instant-table__body-vertical
+								td.instant-table__cell-left.instant-table__cell-bottom Tax
+								td.instant-table__cell-right.instant-table__cell-bottom : $100
+						tfoot.instant-table__footer
+							tr.instant-table__footer-vertical
+								td.instant-table__cell-left.instant-table__cell-title.instant-table__bottom order total
+								td.instant-table__cell-right.instant-table__cell-title.instant-table__bottom : $ 310
+					h3.instant-right__title Payment Method
+					.instant-right__payment
+						.instant-right__checkbox-wrapper
+							input(type="radio" id="delivery" name="radio" value="delivery" required).instant-right__payment-checkbox
+							label(for="delivery").instant-form__payment-label Cash on Delivery
+						.instant-right__checkbox-wrapper
+							input(type="radio" id="credit-card" name="radio" required value="credit-card").instant-right__payment-checkbox
+							label(for="credit-card").instant-form__payment-label Credit card
+						ul.instant-right__card-list
+							li.instant-right__card-item
+								a(href="#").instant-right__card-link
+									img(src="./img/checkout/icon-cirrus.png").instant-right__card-img
+							li.instant-right__card-item
+								a(href="#").instant-right__card-link
+									img(src="./img/checkout/icon-discover.png").instant-right__card-img
+							li.instant-right__card-item
+								a(href="#").instant-right__card-link
+									img(src="./img/checkout/icon-maestro.png").instant-right__card-img
+							li.instant-right__card-item
+								a(href="#").instant-right__card-link
+									img(src="./img/checkout/icon-visa.png").instant-right__card-img

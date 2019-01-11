@@ -1,0 +1,327 @@
+.instant {
+	padding-top: 85px;
+	padding-bottom: 100px;
+	@include laptops {
+		padding-top: 65px;
+		padding-bottom: 75px;
+	}
+	@include tablets {
+		padding-top: 45px;
+		padding-bottom: 50px;
+	}
+	@include phones {
+		padding-top: 25px;
+		padding-bottom: 30px;
+	}
+	@extend %clearfix;
+	&__title {
+		margin-bottom: 22px;
+	}
+	&-table {
+		color: #fff;
+		width: 100%;
+		border-collapse: collapse;
+		&__cell {
+			&-title {
+				font-size: 15px;
+				font-weight: bold;
+				text-transform: uppercase;
+				@include laptops {
+					font-size: 14px;
+				}
+				@include tablets {
+					font-size: 13px;
+				}
+				@include phones {
+					font-size: 12.5px;
+				}
+				&-right {
+					text-align: right;
+				}
+			}
+			&-left {
+				padding-left: 27px;
+				padding-bottom: 6px;
+				text-align: left;
+			}
+			&-right {
+				width: 117px;
+				text-align: left;
+			}
+			&-top {
+				padding-top: 10px;
+			    border-top: 1px solid #ffa6c6;
+			}
+			&-bottom {
+				padding-bottom: 29px;
+				border-bottom: 1px solid #ffa6c6;
+			}
+		}
+		&__bottom {
+			padding-top: 7px;
+			padding-bottom: 50px;
+		}
+		&__header {
+			padding-left: 30px;
+			font-size: 15px;
+			font-family: "Sintony";
+			color: #fff;
+		    padding: 0px 0px 4px 0px;
+			border-bottom: 1px solid #ffa6c6;
+			width: 100%;
+			@include laptops {
+				padding-right: 30px;
+			}
+			@include phones {
+				padding: 0 31px 4px 25px;
+			}
+		}
+		&__body {
+			padding-left: 30px;
+			@extend %list;
+			border-bottom: 1px solid #ffa6c6;
+		    padding: 6px 0px 25px 0px;
+			width: 100%;
+			@include laptops {
+				padding-right: 30px;
+			}
+			@include tablets {
+				padding-right: 30px;
+			}
+			@include phones {
+				padding-right: 31px;
+			}
+			&-vertical {
+				color: #ffd4e4;
+				font-size: 15px;
+				@include laptops {
+					font-size: 14px;
+				}
+				@include tablets {
+					font-size: 13px;
+				}
+				@include phones {
+					font-size: 12.5px;
+					padding: 0 31px 4px 31px;
+				}
+			}
+		}
+		&__footer {
+			padding-left: 30px;
+			margin-bottom: 46px;
+			padding: 4px 0px 0px 0px;
+			color: #fff;
+			text-transform: uppercase;
+			font-size: 15px;
+			width: 100%;
+			@include laptops {
+				font-size: 14px;
+				padding-right: 30px;
+			}
+			@include tablets {
+				font-size: 13px;
+			}
+			@include phones {
+				font-size: 12.5px;
+				padding: 11px 31px 0px 31px;
+			}
+		}
+	}
+	&-left {
+		width: calc(50% - 15px);
+		float: left;
+		margin-right: 30px;
+		@include tablets {
+			width: 100%;
+			float: none;
+		}
+	}
+	&-right {
+		width: calc(50% - 15px);
+		float: left;
+		background-color: #fe4c8d;
+		padding: 10px;
+		@include tablets {
+			float: none;
+			width: 100%;
+			margin-top: 30px;
+		}
+		@include phones {
+			padding: 5px;
+		}
+		&__inside {
+			border: 1px dashed #ffa6c6;
+			padding: 40px 88px 89px 60px;
+			@include laptops {
+				padding: 50px 0px 50px 0px;
+			}
+			@include tablets {
+				padding: 40px 0px;
+			}
+			@include phones {
+				padding: 30px 0px;
+			}
+		}
+		&__checkbox {
+			&-wrapper {
+				margin-bottom: 12.5px;
+			}
+		}
+		&__title {
+			font-size: 22px;
+			font-family: "Playfair Display";
+			color: #fff;
+			padding-left: 30px;
+			margin-bottom: 6px;
+			@include laptops {
+				font-size: 21px;
+			}
+			@include tablets {
+				font-size: 19px;
+			}
+			@include phones {
+				font-size: 18px;
+				padding-left: 31px;
+			}
+		}
+		&__payment {
+			padding: 19px 7px 0 29px;
+			@include phones {
+				padding: 15px 7px 0 10px;
+			}
+			&-label {
+				letter-spacing: 0.1px;
+			}
+		}
+		&__card {
+			&-list {
+				@extend %list;
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+			&-item {
+				margin-right: 8px;
+				@include phones {
+					margin-right: 10px;
+					margin-bottom: 5px;
+				}
+				&:last-child {
+					margin-right: 0px;
+					@include phones {
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+	&-form {
+		display: flex;
+		flex-wrap: wrap;
+		padding: 0px 0px 0px;
+		@include laptops {
+			justify-content: center;
+		}
+		&__submit {
+
+		}
+		&__textarea {
+			min-height: 172px;
+			width: 100%;
+			border: 0;
+			border-bottom: 1px solid #c7d1d6;
+			margin-bottom: 20.5px;
+			padding: 10px 20px 0 0;
+			resize: none;
+			&::placeholder {
+				color: #363d43;
+				font-weight: normal;
+				font-family: "Sintony";
+				@include tablets {
+					font-size: 13px;
+				}
+				@include phones {
+					font-size: 12px;
+				}
+			}
+			&:hover, &:focus {
+				border-color: transparent;
+				border-bottom-color: #000;
+				color: #000;
+			}
+			@include phones {
+				min-height: 100px;
+			}
+		}
+		&__payment {
+			&-label {
+				color: #fff;
+				text-transform: uppercase;
+				@include laptops {
+					font-size: 14px;
+				}
+				@include tablets {
+					font-size: 13px;
+				}
+				@include phones {
+					font-size: 12.5px;
+				}
+			}
+		}
+		&__checkbox {
+			background-color: transparent;
+			&-label {
+				color: #363d43;
+				letter-spacing: -0.1px;
+				@include phones {
+					font-size: 13px;
+				}
+			}
+		}
+		&__input {
+			padding-bottom: 14.5px;
+			padding-top: 14px;
+			width: 100%;
+			border: none;
+			background-color: transparent;
+			height: 42px;
+			border-bottom: 1px solid #c7d1d6;
+			padding-left: 0px;
+			margin-bottom: 30px;
+			font-family: "Sintony";
+			margin-bottom: 18px;
+			&::placeholder {
+				color: #363d43;
+				font-weight: normal;
+				letter-spacing: 0.5px;
+				@include tablets {
+					font-size: 13px;
+				}
+				@include phones {
+					font-size: 12px;
+				}
+			}
+			&:hover, &:focus {
+				border-color: transparent;
+				border-bottom-color: #000;
+				color: #000;
+			}
+			&-wrapper {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 12.5px;
+				width: 100%;
+				@include laptops {
+					display: block;
+				}
+			}
+		}
+		&__submit {
+			padding: 17px 50px;
+			@include laptops {
+				margin: 20px auto 0px;
+			}
+		}
+	}
+}
