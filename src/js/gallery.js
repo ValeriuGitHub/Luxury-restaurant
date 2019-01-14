@@ -1,4 +1,32 @@
 function gallery() {
+
+	var macy = Macy({
+		columns: 3,
+		container: '.macy-container',
+		trueOrder: true,
+		waitForImages: true,
+		margin: {
+			x: 15,
+			y: 15
+		},
+		breakAt: {
+			1024: {
+				margin: {
+					x: 10,
+					y: 10,
+				},
+				columns: 2
+			},
+			450: {
+				margin: {
+					x: 5,
+					y: 5,
+				},
+				columns: 1
+			},
+		}
+	});
+
 	// Tab
 	$(".gallery-img__item").not(":first").hide();
 
@@ -20,22 +48,6 @@ function gallery() {
 
 		$(".gallery-img__item").hide();
 		$(".gallery-img__item").filter('[data-tab=' + dataTab + ']').fadeIn(500);
-		$('.masonry-container').masonry({
-			itemSelector: '.gallery-img__img',
-			columnWidth: '.grid-sizer',
-			percentPosition: true
-		});
-		galleryMasonry();
-	});
-
-	galleryMasonry();
-}
-
-function galleryMasonry() {
-	// external js: masonry.pkgd.js
-	$('.masonry-container').masonry({
-		itemSelector: '.gallery-img__img',
-		columnWidth: '.grid-sizer',
-		percentPosition: true
+		macy.reInit();
 	});
 }

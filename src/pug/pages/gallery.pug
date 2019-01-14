@@ -5,5 +5,10 @@ block variables
 	- var title = "gallery";
 block inner
 	+banner("Gallery", "gallery")
-	include ../blocks/gallery/gallery.pug
+	.gallery-wrapper
+		img(src="./img/gallery/gallery-left.jpg").gallery-wrapper__img
+		.container
+			.gallery
+				include ../blocks/gallery/gallery-menu.pug
+				include ../blocks/gallery/gallery-img.pug
 	+hours("gallery")
