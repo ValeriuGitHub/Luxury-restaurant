@@ -1,4 +1,4 @@
-.banner {
+.background {
 	position: relative;
 	&__background {
 		padding: 86px 0px;
@@ -24,11 +24,11 @@
 				width: 41px;
 			}
 			&:before {
-				background: url("./img/banner/left-leaf.png") no-repeat;
+				background: url("./img/background/left-leaf.png") no-repeat;
 				margin-right: 10px;
 			}
 			&:after {
-				background: url("./img/banner/right-leaf.png") no-repeat;
+				background: url("./img/background/right-leaf.png") no-repeat;
 				margin-left: 10px;
 			}
 		}
@@ -36,72 +36,72 @@
 }
 
 .about {
-	&-banner {
+	&-background {
 		&__background {
-			background: url("./img/banner/about-background.jpg");
+			background: url("./img/background/about-background.jpg");
 			background-size: cover;
 		}
 	}
 }
 
 .menu {
-	&-banner {
+	&-background {
 		&__background {
-			background: url("./img/banner/menu-background.jpg");
+			background: url("./img/background/menu-background.jpg");
 			background-size: cover;
 		}
 	}
 }
 
 .shop {
-	&-banner {
+	&-background {
 		&__background {
-			background: url("./img/banner/shop-background.jpg");
+			background: url("./img/background/shop-background.jpg");
 			background-size: cover;
 		}
 	}
 }
 
 .reservation {
-	&-banner {
+	&-background {
 		&__background {
-			background: url("./img/banner/reservation-background.jpg");
+			background: url("./img/background/reservation-background.jpg");
 			background-size: cover;
 		}
 	}
 }
 
 .details {
-	&-banner {
+	&-background {
 		&__background {
-			background: url("./img/banner/details-background.jpg");
+			background: url("./img/background/details-background.jpg");
 			background-size: cover;
 		}
 	}
 }
 
 .checkout {
-	&-banner {
+	&-background {
 		&__background {
-			background: url("./img/banner/checkout-background.jpg");
+			background: url("./img/background/checkout-background.jpg");
 			background-size: cover;
 		}
 	}
 }
 
 .contact {
-	&-banner {
+	&-background {
 		&__background {
-			background: url("./img/banner/contact-background.jpg");
+			background: url("./img/background/contact-background.jpg");
 			background-size: cover;
 		}
 	}
 }
 
 .gallery {
-	&-banner {
+	&-background {
 		&__background {
-			background: url("./img/banner/gallery-background.jpg");
+			background: url("./img/background/gallery-background.jpg");
 			background-size: cover;
 		}
 	}
