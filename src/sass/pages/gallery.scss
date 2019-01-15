@@ -1,0 +1,143 @@
+.gallery {
+	&-wrapper {
+		position: relative;
+		padding-top: 88px;
+		padding-bottom: 100px;
+		@include laptops {
+			padding-top: 70px;
+			padding-bottom: 80px;
+		}
+		@include tablets {
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+		@include phones {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+		&__img {
+			position: absolute;
+			left: 43px;
+			top: 69px;
+			z-index: -1;
+			@include laptops {
+				display: none;
+			}
+		}
+	}
+	&-img {
+		&__list {
+			@extend %list;
+		}
+		&__img {
+			width: auto;
+			margin: 15px;
+			float: left;
+			@include laptops {
+				margin: 10px;
+			}
+			@include tablets {
+				margin: 5px;
+			}
+			@include phones {
+				margin: 5px 2.5px;
+			}
+		}
+	}
+	&__title {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	&__list {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		@extend %list;
+		margin-bottom: 33px;
+		@include tablets {
+			margin-bottom: 13px;
+		}
+		@include phones {
+			margin-bottom: 0px;
+		}
+	}
+	&__item {
+		margin: 0px 11px;
+		border-right: 1px solid #b7c1c6;
+		&:last-child {
+			margin-right: 0px;
+			border-right: 0px;
+			> .gallery__link {
+				padding-right: 0px;
+			}
+		}
+		@include tablets {
+			margin-bottom: 20px;
+		}
+	}
+	&__icon {
+		margin-bottom: 10px;
+		width: 26px;
+		height: 22px;
+		&-all {
+			background: url("./img/gallery/icon-all-orange.png") no-repeat;
+		}
+		&-restaurant {
+			background: url("./img/gallery/icon-restaurant-orange.png") no-repeat;
+		}
+		&-food {
+			background: url("./img/gallery/icon-food-orange.png") no-repeat;
+		}
+		&-desserts {
+			background: url("./img/gallery/icon-desserts-orange.png") no-repeat;
+		}
+	}
+	&__link {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding-right: 24px;
+		@include tablets {
+			padding-right: 18px;
+		}
+		@include phones {
+			padding-right: 14px;
+		}
+		&:hover .gallery__text {
+			color: $pink;
+		}
+		&:hover .gallery__icon-all {
+			background: url("./img/gallery/icon-all-pink.png") no-repeat;
+		}
+		&:hover .gallery__icon-food {
+			background: url("./img/gallery/icon-food-pink.png") no-repeat;
+		}
+		&:hover .gallery__icon-restaurant {
+			background: url("./img/gallery/icon-restaurant-pink.png") no-repeat;
+		}
+		&:hover .gallery__icon-desserts {
+			background: url("./img/gallery/icon-deserts-pink.png") no-repeat;
+		}
+	}
+	&__text {
+		font-size: 18px;
+		font-family: "Playfair Display";
+		color: $black;
+		transition: 0.3s;
+		&_active {
+			color: $pink;
+		}
+		@include phones {
+			font-size: 13px;
+		}
+	}
+}
+
+.macy-container {
+	width: 1200px;
+	@extend %clearfix;
+	@include laptops {
+		width: 100%;
+	}
+}

@@ -32,13 +32,6 @@ $(function(){
 	});
 });
 
-// Pages
-
-homePage();
-aboutUs();
-shop();
-shopDetails();
-
 // Google Map
 
 $(function() {
@@ -46,3 +39,11 @@ $(function() {
 		initMap();
 	}
 });
+
+// Pages
+
+homePage();
+aboutUs();
+shop();
+shopDetails();
+gallery();

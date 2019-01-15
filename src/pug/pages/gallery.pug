@@ -1,0 +1,14 @@
+extends ../templates/common.pug
+include ../mixins/banner.pug
+include ../mixins/hours.pug
+block variables
+	- var title = "gallery";
+block inner
+	+banner("Gallery", "gallery")
+	.gallery-wrapper
+		img(src="./img/gallery/gallery-left.jpg").gallery-wrapper__img
+		.container
+			.gallery
+				include ../blocks/gallery/gallery-menu.pug
+				include ../blocks/gallery/gallery-img.pug
+	+hours("gallery")

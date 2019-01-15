@@ -1,5 +1,6 @@
 module.exports = [
 	'jquery/dist/jquery.min.js',
 	'slick-carousel/slick/slick.js',
-	'jquery.maskedinput/src/jquery.maskedinput.js'
+	'jquery.maskedinput/src/jquery.maskedinput.js',
+	'macy/dist/macy.js'
 ];

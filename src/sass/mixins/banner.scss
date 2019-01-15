@@ -98,3 +98,12 @@
 	}
 }
 
+.gallery {
+	&-banner {
+		&__background {
+			background: url("./img/banner/gallery-background.jpg");
+			background-size: cover;
+		}
+	}
+}
+
