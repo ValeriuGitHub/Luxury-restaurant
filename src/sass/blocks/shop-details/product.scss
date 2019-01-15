@@ -166,7 +166,7 @@
 			padding: 35px 0px;
 		}
 	}
-	&-form {
+	&-info {
 		display: flex;
 		justify-content: flex-start;
 		&__icon {
@@ -177,6 +177,9 @@
 			&:hover {
 				color: $orange;
 			}
+		}
+		&__link {
+			display: block;
 		}
 		&__minus-icon {
 			left: 9.5px;
@@ -208,6 +211,9 @@
 			font-family: "Sintony";
 			color: $black;
 			font-weight: bold;
+			&:hover, &:focus {
+				border-color: #e4e4e4;
+			}
 			@include phones {
 				width: 100px;
 				margin-right: 5px;
@@ -234,10 +240,12 @@
 			}
 		}
 		&__right-button {
+			padding: 21px 34px;
+			display: block;
 			@include phones {
 				margin: 0px;
 				font-weight: normal;
-			    padding: 15px 14px;
+				padding: 22px 30px;
 			}
 		}
 	}

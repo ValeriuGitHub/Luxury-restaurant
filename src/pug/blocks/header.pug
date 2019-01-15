@@ -1,41 +1,25 @@
 header#header-wrapper
 	.container
 		.header
-			.header-logo
+			a(href="index.html").header-logo
 				img(src="./img/header/logo.png").header-logo__img
 			nav.header-navigation
 				ul.header-navigation__list
 					li.header-navigation__item
-						a(href="http://localhost:3000/index.html").header-navigation__link Home
+						a(href="index.html").header-navigation__link Home
 					li.header-navigation__item
-						a(href="http://localhost:3000/menu.html").header-navigation__link Menu
+						a(href="menu.html").header-navigation__link Menu
 					li.header-navigation__item
-						a(href="http://localhost:3000/reservation.html").header-navigation__link Reservation
+						a(href="shop.html").header-navigation__link Our products
 					li.header-navigation__item
-						a(href="/").header-navigation__link Recipe
+						a(href="gallery.html").header-navigation__link Gallery
 					li.header-navigation__item
-						a(href="/").header-navigation__link Blog
-					li.header-navigation__item
-						a(href="/").header-navigation__link Pages
-					li.header-navigation__item
-						a(href="http://localhost:3000/contact-us.html").header-navigation__link Contact
+						a(href="about-us.html").header-navigation__link About us
 			.header-cart#dropdown
-				.header-cart__img
+				a(href="checkout.html").header-cart__img
 					img(src="./img/header/icon-cart.png")
 					.header-cart__counter 3
-				i.fa.fa-caret-down.header-cart__icon
-				.header-dropdown
-					ul.header-dropdown__list
-						li.header-dropdown__item
-							a(href="").header-dropdown__link
-								| 1
-						li.header-dropdown__item
-							a(href="").header-dropdown__link
-								| 2
-						li.header-dropdown__item
-							a(href="").header-dropdown__link
-								| 3
 			button.header-button
-				.header-button__white-border
+				a(href="reservation.html").header-button__white-border
 					img(src="./img/header/icon-plate.png").header-button__icon
 					| Book your table

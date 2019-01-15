@@ -7,13 +7,13 @@ mixin product(title, price, prevPrice, counter, urlNumber)
 			.product-bottom__price
 				span.product-bottom__price-prev #{price}
 				| #{prevPrice}
-		.product__circle
+		a(href="shop-details.html").product__circle
 			img(src="./img/shop/plus-icon.png").product__plus-icon
 		.product__like
 			.product__counter #{counter}
 			img(src="./img/shop/star-icon.png").product__star-icon
 		.product-wrap
-			a(href="").product-wrap__circle
+			a(href="#").product-wrap__circle
 				img(src="./img/shop/icon-cart.png").product-wrap__img
-			a(href="").product-wrap__circle
+			a(href="#").product-wrap__circle
 				img(src="./img/shop/icon-wishlist.png").product-wrap__img
