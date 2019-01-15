@@ -241,10 +241,11 @@
 		}
 		&__right-button {
 			padding: 21px 34px;
+			display: block;
 			@include phones {
 				margin: 0px;
 				font-weight: normal;
-			    padding: 15px 14px;
+				padding: 22px 30px;
 			}
 		}
 	}
